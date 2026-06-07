@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Senthilkumar Sivakumar — Enterprise Architect · AI · Multi-Cloud · Data</title>
+<meta name="description" content="Professional portfolio of Senthilkumar Sivakumar — Enterprise Solution & Data Architect at DXC Technology. EA, Multi-Cloud, AI, Data, Presales.">
+<meta name="author" content="Senthilkumar Sivakumar">
+<meta property="og:title" content="Senthilkumar Sivakumar — Portfolio">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ── Reset & Base ──────────────────────────────────────────────── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --bg:#f5f4f0;
+  --surface:#fff;
+  --surface2:#f0ede8;
+  --text:#111;
+  --muted:#666;
+  --subtle:#999;
+  --border:rgba(0,0,0,.1);
+  --border2:rgba(0,0,0,.06);
+  --radius:12px;
+  --radius-sm:8px;
+  --sans:'Syne',sans-serif;
+  --mono:'DM Mono',monospace;
+  --serif:'DM Serif Display',serif;
+  --shadow:0 1px 3px rgba(0,0,0,.08);
+  --shadow-md:0 4px 16px rgba(0,0,0,.10);
+  /* world accent injected by JS */
+  --accent:#185FA5;
+  --accent-l:#E6F1FB;
+  --accent-d:#0C447C;
+}
+@media(prefers-color-scheme:dark){
+  :root{
+    --bg:#0e0e0e;--surface:#181818;--surface2:#222;
+    --text:#f0ede8;--muted:#888;--subtle:#555;
+    --border:rgba(255,255,255,.1);--border2:rgba(255,255,255,.05);
+  }
+}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{max-width:100%}
+
+/* ── Layout ────────────────────────────────────────────────────── */
+.container{max-width:920px;margin:0 auto;padding:0 1.5rem}
+.page{display:none;min-height:100vh}
+.page.active{display:block}
+
+/* ── Top Nav ───────────────────────────────────────────────────── */
+#topnav{
+  position:sticky;top:0;z-index:200;
+  background:var(--bg);border-bottom:1px solid var(--border2);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+}
+.nav-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:1rem;padding:.75rem 1.5rem;max-width:920px;margin:0 auto;flex-wrap:wrap;
+}
+.nav-brand{
+  font-size:13px;font-weight:700;cursor:pointer;
+  display:flex;align-items:center;gap:8px;
+  transition:opacity .15s;
+}
+.nav-brand:hover{opacity:.7}
+.nav-brand .brand-dot{
+  width:9px;height:9px;border-radius:50%;
+  background:var(--accent);transition:background .3s;
+}
+.nav-pills{display:flex;gap:4px;flex-wrap:wrap}
+.nav-pill{
+  font-family:var(--mono);font-size:10px;font-weight:500;
+  padding:5px 12px;border-radius:20px;cursor:pointer;
+  border:1px solid var(--border);color:var(--muted);
+  background:transparent;transition:all .18s;white-space:nowrap;
+}
+.nav-pill:hover{border-color:var(--accent);color:var(--accent)}
+.nav-pill.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+/* ── Home Hero ─────────────────────────────────────────────────── */
+.home-hero{
+  padding:4rem 0 3rem;
+  border-bottom:1px solid var(--border2);
+  margin-bottom:3rem;
+}
+.home-eyebrow{
+  font-family:var(--mono);font-size:10px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--subtle);margin-bottom:1rem;
+}
+.home-title{
+  font-size:clamp(32px,5vw,52px);font-weight:800;
+  letter-spacing:-.03em;line-height:1.1;margin-bottom:1rem;
+}
+.home-title em{font-family:var(--serif);font-style:italic;font-weight:400}
+.home-subtitle{
+  font-size:15px;color:var(--muted);max-width:580px;line-height:1.7;
+  margin-bottom:2rem;
+}
+.home-links{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:2.5rem}
+.hl-btn{
+  display:inline-flex;align-items:center;gap:6px;
+  font-family:var(--mono);font-size:11px;font-weight:500;
+  padding:8px 16px;border-radius:20px;border:1px solid;
+  cursor:pointer;transition:all .18s;
+}
+.hl-btn.primary{background:var(--text);color:var(--bg);border-color:var(--text)}
+.hl-btn.primary:hover{opacity:.85}
+.hl-btn.ghost{background:transparent;color:var(--muted);border-color:var(--border)}
+.hl-btn.ghost:hover{color:var(--text);border-color:var(--text)}
+
+/* ── World Cards Grid ──────────────────────────────────────────── */
+.world-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:14px;margin-bottom:3rem;
+}
+.world-card{
+  background:var(--surface);
+  border:1px solid var(--border2);
+  border-radius:var(--radius);
+  padding:1.5rem;cursor:pointer;
+  transition:all .22s;position:relative;
+  overflow:hidden;
+}
+.world-card::after{
+  content:'';position:absolute;inset:0;
+  background:var(--wc);opacity:0;transition:.22s;
+  pointer-events:none;
+}
+.world-card:hover{
+  border-color:var(--wc);
+  transform:translateY(-3px);
+  box-shadow:var(--shadow-md);
+}
+.world-card:hover::after{opacity:.04}
+.wc-icon{font-size:26px;display:block;margin-bottom:.875rem}
+.wc-title{font-size:15px;font-weight:700;margin-bottom:.375rem;color:var(--wc)}
+.wc-tag{
+  font-family:var(--mono);font-size:10px;color:var(--muted);
+  line-height:1.5;margin-bottom:.875rem;
+}
+.wc-stats{
+  display:flex;gap:10px;flex-wrap:wrap;
+  font-family:var(--mono);font-size:9px;color:var(--subtle);
+}
+.wc-arrow{
+  position:absolute;bottom:1.25rem;right:1.25rem;
+  font-size:18px;opacity:.25;transition:.22s;
+}
+.world-card:hover .wc-arrow{opacity:.6;transform:translate(3px,-3px)}
+
+/* ── Sector / Skill chips ──────────────────────────────────────── */
+.chip-row{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:2rem}
+.chip{
+  font-family:var(--mono);font-size:10px;
+  padding:4px 10px;border-radius:20px;
+  border:1px solid var(--border);color:var(--muted);
+  background:var(--surface);white-space:nowrap;
+}
+.chip.accent{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+/* ── World Hero ────────────────────────────────────────────────── */
+.world-hero{
+  padding:3rem 0 2.5rem;
+  border-bottom:1px solid var(--border2);
+  margin-bottom:2.5rem;
+}
+.world-eyebrow{
+  font-family:var(--mono);font-size:10px;letter-spacing:.12em;
+  text-transform:uppercase;margin-bottom:.75rem;
+  color:var(--accent);
+}
+.world-title{
+  font-size:clamp(24px,4vw,38px);font-weight:800;
+  letter-spacing:-.025em;line-height:1.15;margin-bottom:.75rem;
+}
+.world-title em{font-family:var(--serif);font-style:italic}
+.world-desc{
+  font-size:14px;color:var(--muted);max-width:640px;
+  line-height:1.75;margin-bottom:1.5rem;
+}
+.pub-row{display:flex;gap:8px;flex-wrap:wrap}
+.pub-btn{
+  font-family:var(--mono);font-size:10px;font-weight:500;
+  padding:6px 14px;border-radius:20px;border:1px solid;
+  display:inline-flex;align-items:center;gap:5px;
+  cursor:pointer;transition:all .15s;
+}
+.pub-btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.pub-btn.primary:hover{opacity:.85}
+.pub-btn.ghost{background:transparent;color:var(--muted);border-color:var(--border)}
+.pub-btn.ghost:hover{color:var(--text);border-color:var(--text)}
+
+/* ── Stats Row ─────────────────────────────────────────────────── */
+.stats-row{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));
+  gap:10px;margin-bottom:2rem;
+}
+.stat-box{
+  background:var(--surface2);border-radius:var(--radius-sm);
+  padding:.875rem 1rem;
+}
+.stat-val{font-size:17px;font-weight:800;color:var(--accent)}
+.stat-lbl{font-family:var(--mono);font-size:9px;color:var(--subtle);margin-top:3px;line-height:1.4}
+
+/* ── Section label ─────────────────────────────────────────────── */
+.sec-lbl{
+  font-family:var(--mono);font-size:9px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--subtle);
+  padding-bottom:.5rem;border-bottom:1px solid var(--border2);
+  margin-bottom:1rem;
+}
+
+/* ── Scenario cards ────────────────────────────────────────────── */
+.scenario-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:12px;margin-bottom:2.5rem;
+}
+.sc{
+  background:var(--surface);border:1px solid var(--border2);
+  border-radius:var(--radius);padding:1.25rem;
+  transition:border-color .18s;
+}
+.sc:hover{border-color:var(--accent)}
+.sc-sector{
+  display:inline-block;font-family:var(--mono);font-size:9px;
+  padding:3px 9px;border-radius:10px;margin-bottom:.625rem;font-weight:500;
+}
+.sc-sector.Banking{background:#E6F1FB;color:#0C447C}
+.sc-sector.Retail{background:#E1F5EE;color:#085041}
+.sc-sector.Public{background:#EEEDFE;color:#3C3489}
+.sc-sector.Insurance{background:#FAEEDA;color:#854F0B}
+.sc-title{font-size:13px;font-weight:700;margin-bottom:.5rem;line-height:1.35}
+.sc-challenge{font-size:12px;color:var(--muted);line-height:1.6;margin-bottom:.75rem}
+.sc-outcome{
+  font-size:11px;font-family:var(--mono);
+  padding:8px 10px;border-radius:var(--radius-sm);
+  background:var(--surface2);border:1px solid var(--border2);
+  line-height:1.5;
+}
+.sc-outcome strong{
+  display:block;font-size:9px;text-transform:uppercase;
+  letter-spacing:.08em;color:var(--subtle);margin-bottom:3px;
+}
+
+/* ── Skills tags ───────────────────────────────────────────────── */
+.skills-row{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:2rem}
+.sk{
+  font-family:var(--mono);font-size:10px;
+  padding:4px 10px;border-radius:20px;
+  border:1px solid var(--border);color:var(--muted);
+}
+
+/* ── Blog post cards ───────────────────────────────────────────── */
+.posts-list{display:flex;flex-direction:column;gap:12px;margin-bottom:2.5rem}
+.post-card{
+  background:var(--surface);border:1px solid var(--border2);
+  border-radius:var(--radius);padding:1.375rem;
+  cursor:pointer;transition:all .18s;
+}
+.post-card:hover{border-color:var(--accent);transform:translateX(3px)}
+.pm{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:.625rem}
+.pm-date{font-family:var(--mono);font-size:10px;color:var(--subtle)}
+.pm-cat{
+  font-family:var(--mono);font-size:10px;
+  padding:2px 9px;border-radius:10px;
+}
+.post-title{font-size:14px;font-weight:700;line-height:1.4;margin-bottom:.5rem}
+.post-exc{font-size:12px;color:var(--muted);line-height:1.65;margin-bottom:.875rem}
+.post-foot{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.pt-tags{display:flex;gap:5px;flex-wrap:wrap}
+.ptag{
+  font-family:var(--mono);font-size:9px;
+  padding:2px 8px;border-radius:8px;
+  background:var(--surface2);color:var(--subtle);
+}
+.read-btn{
+  font-family:var(--mono);font-size:10px;font-weight:500;
+  padding:5px 12px;border-radius:20px;border:1px solid var(--accent);
+  color:var(--accent);transition:.15s;white-space:nowrap;
+}
+.read-btn:hover{background:var(--accent);color:#fff}
+
+/* ── Blog post reader ──────────────────────────────────────────── */
+#post-reader{display:none;min-height:100vh}
+#post-reader.active{display:block}
+.post-reader-hero{
+  padding:2.5rem 0 2rem;border-bottom:1px solid var(--border2);
+  margin-bottom:2.5rem;
+}
+.back-btn{
+  display:inline-flex;align-items:center;gap:6px;
+  font-family:var(--mono);font-size:11px;color:var(--muted);
+  cursor:pointer;margin-bottom:1.5rem;transition:.15s;
+  border:1px solid var(--border);padding:5px 12px;border-radius:20px;
+}
+.back-btn:hover{color:var(--text);border-color:var(--text)}
+.post-full-title{
+  font-size:clamp(20px,3.5vw,32px);font-weight:800;
+  letter-spacing:-.025em;line-height:1.2;
+  max-width:680px;margin-bottom:1rem;
+}
+.post-full-exc{
+  font-size:14px;color:var(--muted);max-width:640px;
+  line-height:1.7;margin-bottom:1rem;
+}
+.post-body{max-width:680px;font-size:15px;line-height:1.82;margin-bottom:3rem}
+.post-body h2{
+  font-size:20px;font-weight:700;margin:2.5rem 0 .875rem;
+  padding-left:14px;border-left:3px solid var(--accent);
+}
+.post-body p{margin-bottom:1.375rem;color:var(--text)}
+.post-body ul{margin:0 0 1.375rem 1.5rem}
+.post-body li{margin-bottom:.5rem;color:var(--muted)}
+
+/* ── Footer ────────────────────────────────────────────────────── */
+footer{
+  border-top:1px solid var(--border2);padding:2rem 0;margin-top:4rem;
+}
+.foot-inner{
+  display:flex;justify-content:space-between;align-items:center;
+  flex-wrap:wrap;gap:1rem;max-width:920px;margin:0 auto;padding:0 1.5rem;
+}
+.foot-copy{font-family:var(--mono);font-size:10px;color:var(--subtle)}
+.foot-links{display:flex;gap:16px;flex-wrap:wrap}
+.foot-links a{font-family:var(--mono);font-size:10px;color:var(--subtle);transition:.15s}
+.foot-links a:hover{color:var(--text)}
+
+/* ── Animations ────────────────────────────────────────────────── */
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.page.active,.world-card,.post-card,.sc{animation:fadeIn .25s ease both}
+
+/* ── Print ─────────────────────────────────────────────────────── */
+@media print{#topnav{position:static}.nav-pill,.pub-btn,.hl-btn{display:none}}
+</style>
+</head>
+<body>
+
+<!-- ── TOP NAV ──────────────────────────────────────────────────────────── -->
+<header id="topnav">
+  <div class="nav-inner">
+    <div class="nav-brand" onclick="showPage('home')">
+      <span class="brand-dot" id="brand-dot"></span>
+      <span>Senthilkumar Sivakumar</span>
+    </div>
+    <nav class="nav-pills">
+      <button class="nav-pill active" id="pill-home" onclick="showPage('home')">Hub</button>
+      <button class="nav-pill" id="pill-ea-world" onclick="showWorld('ea-world')">EA World</button>
+      <button class="nav-pill" id="pill-multicloud-world" onclick="showWorld('multicloud-world')">Multi-Cloud World</button>
+      <button class="nav-pill" id="pill-ai-world" onclick="showWorld('ai-world')">AI World</button>
+      <button class="nav-pill" id="pill-data-world" onclick="showWorld('data-world')">Data World</button>
+      <button class="nav-pill" id="pill-presales-world" onclick="showWorld('presales-world')">Presales & Leadership</button>
+    </nav>
+  </div>
+</header>
+
+<!-- ════════════════════════════════════════════════════════════════════════ -->
+<!-- HOME PAGE                                                               -->
+<!-- ════════════════════════════════════════════════════════════════════════ -->
+<div class="page active" id="page-home">
+<div class="container">
+
+  <div class="home-hero">
+    <div class="home-eyebrow">Professional Portfolio · DXC Technology · Enterprise Architecture & AI Practice · London, UK</div>
+    <h1 class="home-title">
+      Senthilkumar <em>Sivakumar</em><br>
+      — Architecture, AI &amp; Data
+    </h1>
+    <p class="home-subtitle">
+      18+ years designing complex, regulated, cloud-native solutions across Banking, Public Sector, Insurance &amp; Retail. Every pattern drawn from a real engagement. Every outcome measured.
+    </p>
+    <div class="home-links">
+      <a class="hl-btn primary" href="https://linkedin.com/in/senthilkumar-sivakumar" target="_blank">LinkedIn →</a>
+      <a class="hl-btn ghost" href="https://github.com/senthilkumar-sivakumar" target="_blank">GitHub</a>
+      <a class="hl-btn ghost" href="mailto:senthilkumar.sivakumar@dxc.com">Contact</a>
+    </div>
+
+    <div class="sec-lbl">Sector coverage</div>
+    <div class="chip-row">
+      <span class="chip">Banking & Financial Services</span><span class="chip">Public Sector & NHS</span><span class="chip">Retail & E-Commerce</span><span class="chip">Insurance & Lloyd's</span><span class="chip">Wealth Management</span>
+    </div>
+    <div class="sec-lbl">Regulatory expertise</div>
+    <div class="chip-row">
+      <span class="chip">EU AI Act</span><span class="chip">DORA</span><span class="chip">BCBS 239</span><span class="chip">GDPR</span><span class="chip">SR 11-7</span><span class="chip">FCA / PRA</span><span class="chip">MiFID II</span><span class="chip">Basel IV</span><span class="chip">Solvency II</span><span class="chip">COREP / FINREP</span><span class="chip">JMLSG / FATF</span><span class="chip">NCSC Cyber Essentials</span>
+    </div>
+  </div>
+
+  <div class="sec-lbl">Five portfolio worlds</div>
+  <div class="world-grid">
+    
+    <div class="world-card" onclick="showWorld('ea-world')" style="--wc:#185FA5">
+      <span class="wc-icon">🏛️</span>
+      <div class="wc-title">Enterprise Architecture World</div>
+      <div class="wc-tag">TOGAF ADM · ArchiMate 3.1 · Regulatory-Aligned Reference Solutions</div>
+      <div class="wc-stats">
+        <span>4 scenarios</span>
+        <span>·</span>
+        <span>3 posts</span>
+        <span>·</span>
+        <span>16 skills</span>
+      </div>
+      <span class="wc-arrow">↗</span>
+    </div>
+    <div class="world-card" onclick="showWorld('multicloud-world')" style="--wc:#0F6E56">
+      <span class="wc-icon">☁️</span>
+      <div class="wc-title">Multi-Cloud Architecture World</div>
+      <div class="wc-tag">AWS · Azure · Oracle OCI · Hybrid & Multi-Cloud Reference Designs</div>
+      <div class="wc-stats">
+        <span>4 scenarios</span>
+        <span>·</span>
+        <span>3 posts</span>
+        <span>·</span>
+        <span>18 skills</span>
+      </div>
+      <span class="wc-arrow">↗</span>
+    </div>
+    <div class="world-card" onclick="showWorld('ai-world')" style="--wc:#533AB7">
+      <span class="wc-icon">🤖</span>
+      <div class="wc-title">AI / Agentic / ML / MCP / RAG World</div>
+      <div class="wc-tag">AWS Bedrock · MCP · RAG · MLOps · EU AI Act Compliance</div>
+      <div class="wc-stats">
+        <span>4 scenarios</span>
+        <span>·</span>
+        <span>3 posts</span>
+        <span>·</span>
+        <span>17 skills</span>
+      </div>
+      <span class="wc-arrow">↗</span>
+    </div>
+    <div class="world-card" onclick="showWorld('data-world')" style="--wc:#BA7517">
+      <span class="wc-icon">📊</span>
+      <div class="wc-title">Data Architecture World</div>
+      <div class="wc-tag">Data Mesh · Lakehouse · Real-Time Streaming · Regulatory Data Compliance</div>
+      <div class="wc-stats">
+        <span>4 scenarios</span>
+        <span>·</span>
+        <span>3 posts</span>
+        <span>·</span>
+        <span>19 skills</span>
+      </div>
+      <span class="wc-arrow">↗</span>
+    </div>
+    <div class="world-card" onclick="showWorld('presales-world')" style="--wc:#993556">
+      <span class="wc-icon">🎯</span>
+      <div class="wc-title">Presales, Solution Leadership & Client Engagement</div>
+      <div class="wc-tag">C-Suite Engagement · Bid Architecture · SAFe Leadership · Mentoring</div>
+      <div class="wc-stats">
+        <span>4 scenarios</span>
+        <span>·</span>
+        <span>3 posts</span>
+        <span>·</span>
+        <span>14 skills</span>
+      </div>
+      <span class="wc-arrow">↗</span>
+    </div>
+  </div>
+
+  <div class="sec-lbl">Certifications & credentials</div>
+  <div class="chip-row" style="margin-bottom:3rem">
+    <span class="chip">AZ-305 Azure Architect</span><span class="chip">AZ-500 Azure Security</span><span class="chip">DP-203 Data Engineering</span><span class="chip">AI-102 Azure AI</span><span class="chip">Oracle OCI Architect</span><span class="chip">Oracle HCM/ERP</span><span class="chip">TOGAF</span><span class="chip">MSc Data Analytics</span><span class="chip">Level 7 Digital Apprenticeship</span>
+  </div>
+
+</div>
+<footer>
+  <div class="foot-inner">
+    <div class="foot-copy">© 2025 Senthilkumar Sivakumar · DXC Technology · Enterprise Architecture & AI Practice</div>
+    <div class="foot-links">
+      <a href="#" onclick="showWorld('ea-world');return false">EA World</a><a href="#" onclick="showWorld('multicloud-world');return false">Multi-Cloud World</a><a href="#" onclick="showWorld('ai-world');return false">AI World</a><a href="#" onclick="showWorld('data-world');return false">Data World</a><a href="#" onclick="showWorld('presales-world');return false">Presales & Leadership</a>
+      <a href="https://github.com/senthilkumar-sivakumar" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/senthilkumar-sivakumar" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+</div><!-- /page-home -->
+
+<!-- ════════════════════════════════════════════════════════════════════════ -->
+<!-- WORLD PAGES                                                             -->
+<!-- ════════════════════════════════════════════════════════════════════════ -->
+
+<div class="page" id="page-ea-world" data-accent="#185FA5" data-accent-l="#E6F1FB" data-accent-d="#0C447C">
+<div class="container">
+
+  <div class="world-hero">
+    <div class="world-eyebrow">🏛️ Enterprise Architecture World</div>
+    <h1 class="world-title"><em>EA World</em> — TOGAF ADM</h1>
+    <p class="world-desc">Real-world enterprise architecture patterns, TOGAF ADM reference solutions, ArchiMate 3.1 full-stack modelling, and regulatory-aligned design decisions for complex, multi-stakeholder programmes. Every entry reflects a real engagement outcome — anonymised per client confidentiality.</p>
+    <div class="pub-row">
+      <a class="pub-btn primary" href="https://senthilkumar-sivakumar.github.io/ea-world" target="_blank" style="background:#185FA5;border-color:#0C447C">🌐 Web Publication</a>
+      <a class="pub-btn ghost" href="https://github.com/senthilkumar-sivakumar/ea-world" target="_blank">⬡ GitHub Repo</a>
+      <a class="pub-btn ghost" href="https://medium.com/@ss-ea-world" target="_blank">Medium Blog</a>
+      <a class="pub-btn ghost" href="https://dev.to/senthilkumarea-world" target="_blank">Dev.to</a>
+    </div>
+  </div>
+
+  <div class="stats-row">
+    <div class="stat-box"><div class="stat-val">18+</div><div class="stat-lbl">Years EA Practice</div></div><div class="stat-box"><div class="stat-val">TOGAF</div><div class="stat-lbl">ADM Phases A–H</div></div><div class="stat-box"><div class="stat-val">ArchiMate</div><div class="stat-lbl">3.1 Full Stack</div></div><div class="stat-box"><div class="stat-val">EU AI Act</div><div class="stat-lbl">Compliance Aligned</div></div><div class="stat-box"><div class="stat-val">3</div><div class="stat-lbl">Regulated Sectors</div></div>
+  </div>
+
+  <div class="sec-lbl">Core skills & stack</div>
+  <div class="skills-row">
+    <span class="sk">TOGAF ADM A–H</span><span class="sk">ArchiMate 3.1</span><span class="sk">Zachman Framework</span><span class="sk">SABSA Security</span><span class="sk">EU AI Act</span><span class="sk">DORA</span><span class="sk">GDPR</span><span class="sk">SR 11-7</span><span class="sk">FCA / PRA</span><span class="sk">BCBS 239</span><span class="sk">Basel IV</span><span class="sk">MiFID II</span><span class="sk">Sparx EA</span><span class="sk">Ardoq</span><span class="sk">LeanIX</span><span class="sk">COREP/FINREP</span>
+  </div>
+
+  <div class="sec-lbl">Real-world scenario portfolio</div>
+  <div class="scenario-grid">
+    
+    <div class="sc">
+      <span class="sc-sector Banking">Banking</span>
+      <div class="sc-title">TOGAF ADM Phase A–H: Retail Bank Modernisation</div>
+      <div class="sc-challenge">Legacy core banking on IBM mainframe; 14 siloed LOB applications; no shared capability model. Mandate: migrate to cloud-native, reduce TTM by 60%.</div>
+      <div class="sc-outcome"><strong>Outcome</strong>42 capability domains mapped; ArchiMate roadmap board-approved; £4.2M YoY savings from decommissioned redundant capabilities.</div>
+    </div>
+    <div class="sc">
+      <span class="sc-sector Public Sector">Public Sector</span>
+      <div class="sc-title">NHS Supply Chain — Reference EA for Procurement Platform</div>
+      <div class="sc-challenge">23 NHS trusts with fragmented procurement data, no enterprise data model, duplicated supplier master records causing £6.4M annual overspend.</div>
+      <div class="sc-outcome"><strong>Outcome</strong>Single canonical procurement ontology; TOGAF Phase B–D artefacts ratified; £6.38M savings realised in Year 1; 203% 3-year ROI.</div>
+    </div>
+    <div class="sc">
+      <span class="sc-sector Retail">Retail</span>
+      <div class="sc-title">Omnichannel Target Architecture — UK Retailer S/4HANA Migration</div>
+      <div class="sc-challenge">Tier-1 UK retailer running SAP ECC 6.0 with 11 custom bolt-ons; 240+ point-to-point integration interfaces; S/4HANA migration scope undefined and budget contested.</div>
+      <div class="sc-outcome"><strong>Outcome</strong>Integration debt reduced from 240 to 38 canonical APIs; migration waves sequenced and funded; 31% TCO reduction projected over 3 years.</div>
+    </div>
+    <div class="sc">
+      <span class="sc-sector Insurance">Insurance</span>
+      <div class="sc-title">London Market Insurance — Post-Merger EA Governance</div>
+      <div class="sc-challenge">Lloyd's syndicate post-merger integration; two conflicting enterprise architectures; GDPR accountability gaps; Solvency II data lineage absent.</div>
+      <div class="sc-outcome"><strong>Outcome</strong>Merged ArchiMate model live in 6 weeks; 100% Solvency II lineage coverage; FCA change-of-control notification supported; EA governance board operational in 8 weeks.</div>
+    </div>
+  </div>
+
+  <div class="sec-lbl">Featured blog posts</div>
+  <div class="posts-list">
+    
+    <div class="post-card" onclick="showPost('ea-world',0)">
+      <div class="pm">
+        <span class="pm-date">April 2025</span>
+        <span class="pm-cat" style="background:#E6F1FB;color:#0C447C">TOGAF · Banking</span>
+      </div>
+      <div class="post-title">Applying TOGAF ADM to an AI-Augmented Core Banking Transformation — a GlobalBank Case Study</div>
+      <div class="post-exc">Walking through all eight ADM phases on a live engagement: how Phase A vision statements translate into EU AI Act Article 9 risk management obligations, and how Phase E migration planning must account for model drift SLAs alongside classic application portfolio rationalisation.</div>
+      <div class="post-foot">
+        <div class="pt-tags"><span class="ptag">TOGAF</span><span class="ptag">EU AI Act</span><span class="ptag">Core Banking</span><span class="ptag">PRA</span></div>
+        <span class="read-btn">Read article →</span>
+      </div>
+    </div>
+    <div class="post-card" onclick="showPost('ea-world',1)">
+      <div class="pm">
+        <span class="pm-date">February 2025</span>
+        <span class="pm-cat" style="background:#E6F1FB;color:#0C447C">ArchiMate · Public Sector</span>
+      </div>
+      <div class="post-title">ArchiMate 3.1 Full-Stack Modelling for NHS Supply Chain: Lessons from 23 Trusts</div>
+      <div class="post-exc">Practical ArchiMate modelling decisions when the motivation layer must capture 23 different NHS trust strategies simultaneously, and how the strategy and implementation layers diverge under NHS procurement law constraints.</div>
+      <div class="post-foot">
+        <div class="pt-tags"><span class="ptag">ArchiMate 3.1</span><span class="ptag">NHS</span><span class="ptag">Public Sector</span><span class="ptag">Procurement Law</span></div>
+        <span class="read-btn">Read article →</span>
+      </div>
+    </div>
+    <div class="post-card" onclick="showPost('ea-world',2)">
+      <div class="pm">
+        <span class="pm-date">January 2025</span>
+        <span class="pm-cat" style="background:#E6F1FB;color:#0C447C">Governance · Insurance</span>
+      </div>
+      <div class="post-title">Standing Up an EA Governance Board Post-Merger in 8 Weeks — Lloyd's Case Study</div>
+      <div class="post-exc">How we used TOGAF's Architecture Board concept and ArchiMate motivation viewpoints to align two competing IT strategies within a Lloyd's syndicate merger, satisfying FCA change-of-control requirements on schedule.</div>
+      <div class="post-foot">
+        <div class="pt-tags"><span class="ptag">Governance</span><span class="ptag">FCA</span><span class="ptag">Lloyd's</span><span class="ptag">TOGAF</span><span class="ptag">ArchiMate</span></div>
+        <span class="read-btn">Read article →</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+<footer>
+  <div class="foot-inner">
+    <div class="foot-copy">© 2025 Senthilkumar Sivakumar · DXC Technology</div>
+    <div class="foot-links">
+      <a href="#" onclick="showPage('home');return false">Hub</a>
+      <a href="#" onclick="showWorld('ea-world');return false">EA World</a><a href="#" onclick="showWorld('multicloud-world');return false">Multi-Cloud World</a><a href="#" onclick="showWorld('ai-world');return false">AI World</a><a href="#" onclick="showWorld('data-world');return false">Data World</a><a href="#" onclick="showWorld('presales-world');return false">Presales & Leadership</a>
+    </div>
+  </div>
+</footer>
+</div>
+
+<div class="page" id="page-multicloud-world" data-accent="#0F6E56" data-accent-l="#E1F5EE" data-accent-d="#085041">
+<div class="container">
+
+  <div class="world-hero">
+    <div class="world-eyebrow">☁️ Multi-Cloud Architecture World</div>
+    <h1 class="world-title"><em>Multi-Cloud World</em> — AWS</h1>
+    <p class="world-desc">Production-tested cloud solution designs across AWS, Azure, Oracle OCI, and hybrid/multi-cloud platforms. Real architectural trade-off analyses, landing zone blueprints, FinOps outcomes, and security posture decisions — drawn from live client engagements in banking, public sector, insurance, and retail.</p>
+    <div class="pub-row">
+      <a class="pub-btn primary" href="https://senthilkumar-sivakumar.github.io/multicloud-world" target="_blank" style="background:#0F6E56;border-color:#085041">🌐 Web Publication</a>
+      <a class="pub-btn ghost" href="https://github.com/senthilkumar-sivakumar/multicloud-world" target="_blank">⬡ GitHub Repo</a>
+      <a class="pub-btn ghost" href="https://medium.com/@ss-multicloud-world" target="_blank">Medium Blog</a>
+      <a class="pub-btn ghost" href="https://dev.to/senthilkumarmulticloud-world" target="_blank">Dev.to</a>
+    </div>
+  </div>
+
+  <div class="stats-row">
+    <div class="stat-box"><div class="stat-val">AWS</div><div class="stat-lbl">Bedrock · EKS · RDS</div></div><div class="stat-box"><div class="stat-val">Azure</div><div class="stat-lbl">AZ-305 · AZ-500</div></div><div class="stat-box"><div class="stat-val">OCI</div><div class="stat-lbl">ExaCC · ADW · OKE</div></div><div class="stat-box"><div class="stat-val">FinOps</div><div class="stat-lbl">Cost Governance</div></div><div class="stat-box"><div class="stat-val">Zero Trust</div><div class="stat-lbl">Security Posture</div></div>
+  </div>
+
+  <div class="sec-lbl">Core skills & stack</div>
+  <div class="skills-row">
+    <span class="sk">AWS Bedrock</span><span class="sk">Amazon EKS</span><span class="sk">AWS DMS</span><span class="sk">AWS Glue</span><span class="sk">Amazon Kinesis</span><span class="sk">Azure Landing Zones</span><span class="sk">Azure Service Bus</span><span class="sk">AKS</span><span class="sk">Azure Firewall</span><span class="sk">OCI ExaCC</span><span class="sk">Oracle ADW</span><span class="sk">OCI OKE</span><span class="sk">Terraform</span><span class="sk">Ansible</span><span class="sk">FinOps</span><span class="sk">DORA ICT Resilience</span><span class="sk">Zero Trust</span><span class="sk">NCSC Cyber Essentials</span>
+  </div>
+
+  <div class="sec-lbl">Real-world scenario portfolio</div>
+  <div class="scenario-grid">
+    
+    <div class="sc">
+      <span class="sc-sector Banking">Banking</span>
+      <div class="sc-title">AWS + Azure Active-Active Multi-Cloud for DORA Compliance</div>
+      <div class="sc-challenge">Regulatory requirement for geographic data sovereignty with sub-100ms failover; no single CSP could satisfy DORA's ICT resilience requirements alone. EBA supervisory expectation for documented concentration risk mitigation.</div>
+      <div class="sc-outcome"><strong>Outcome</strong>99.999% uptime achieved post-cutover; RTO <90 seconds validated in DR exercise; DORA Article 11 ICT resilience compliance evidenced to EBA supervisor.</div>
+    </div>
+    <div class="sc">
+      <span class="sc-sector Public Sector">Public Sector</span>
+      <div class="sc-title">Oracle ExaCC Golden Image Pipeline — Government Dept.</div>
+      <div class="sc-challenge">Uncontrolled OS patch drift across 140 VMs on OCI ExaCC; 4-hour manual promotion pipeline; NCSC Cyber Essentials Plus audit failure on patch currency.</div>
+      <div class="sc-outcome"><strong>Outcome</strong>Patch promotion time reduced from 4 hours to 22 minutes; 100% patch currency achieved; NCSC Cyber Essentials Plus audit passed; zero manual steps in promotion pipeline.</div>
+    </div>
+    <div class="sc">
+      <span class="sc-sector Retail">Retail</span>
+      <div class="sc-title">Azure Landing Zone + FinOps for UK Retailer Cloud Migration</div>
+      <div class="sc-challenge">£2.3M annual cloud overspend across 14 unmanaged Azure subscriptions; zero resource tagging compliance; no cost allocation to business units; shadow IT proliferation.</div>
+      <div class="sc-outcome"><strong>Outcome</strong>£1.1M annualised savings in Year 1; 100% resource tagging compliance achieved in 8 weeks; FinOps chargeback model live with monthly board reporting.</div>
+    </div>
+    <div class="sc">
+      <span class="sc-sector Insurance">Insurance</span>
+      <div class="sc-title">OCI + AWS Hybrid: Insurance Indenture Processing at Scale</div>
+      <div class="sc-challenge">50,000 PDF indenture contracts/day; on-premises OCR pipeline at capacity; 48-hour SLA breached on 30% of contracts; Solvency II data lineage requirements unmet.</div>
+      <div class="sc-outcome"><strong>Outcome</strong>SLA compliance 99.2% (from 70%); Solvency II lineage graph fully populated in Neptune; 40% cost saving vs pure on-premises expansion.</div>
+    </div>
+  </div>
+
+  <div class="sec-lbl">Featured blog posts</div>
+  <div class="posts-list">
+    
+    <div class="post-card" onclick="showPost('multicloud-world',0)">
+      <div class="pm">
+        <span class="pm-date">March 2025</span>
+        <span class="pm-cat" style="background:#E1F5EE;color:#085041">AWS · Azure · DORA</span>
+      </div>
+      <div class="post-title">Designing DORA-Compliant ICT Resilience on AWS + Azure: An Active-Active Reference Architecture</div>
+      <div class="post-exc">How we engineered cross-cloud failover without sacrificing GDPR data residency. Covers Route 53 ARC, Azure Traffic Manager, and the latency budget trade-offs that drove the final design decision.</div>
+      <div class="post-foot">
+        <div class="pt-tags"><span class="ptag">DORA</span><span class="ptag">AWS</span><span class="ptag">Azure</span><span class="ptag">EBA</span><span class="ptag">DR</span><span class="ptag">Latency</span></div>
+        <span class="read-btn">Read article →</span>
+      </div>
+    </div>
+    <div class="post-card" onclick="showPost('multicloud-world',1)">
+      <div class="pm">
+        <span class="pm-date">May 2025</span>
+        <span class="pm-cat" style="background:#E1F5EE;color:#085041">OCI · ExaCC · Public Sector</span>
+      </div>
+      <div class="post-title">Oracle ExaCC Golden Image: Building a 4-Compartment Automated Promotion Pipeline</div>
+      <div class="post-exc">A walkthrough of the Ansible playbooks, OCI compartment policies, and DevSecOps pipeline that reduced our government client's patch promotion time by 90%.</div>
+      <div class="post-foot">
+        <div class="pt-tags"><span class="ptag">OCI</span><span class="ptag">ExaCC</span><span class="ptag">Ansible</span><span class="ptag">NCSC</span><span class="ptag">DevSecOps</span><span class="ptag">Automation</span></div>
+        <span class="read-btn">Read article →</span>
+      </div>
+    </div>
+    <div class="post-card" onclick="showPost('multicloud-world',2)">
+      <div class="pm">
+        <span class="pm-date">January 2025</span>
+        <span class="pm-cat" style="background:#E1F5EE;color:#085041">Azure · FinOps · Retail</span>
+      </div>
+      <div class="post-title">£1.1M Saved in Year 1: The Azure FinOps Architecture That Made It Possible</div>
+      <div class="post-exc">How a Management Group hierarchy, deny-effect Azure Policy, and a FinOps chargeback model transformed a £2.3M annual cloud overspend into a strategic cost advantage.</div>
+      <div class="post-foot">
+        <div class="pt-tags"><span class="ptag">Azure</span><span class="ptag">FinOps</span><span class="ptag">Landing Zone</span><span class="ptag">Policy</span><span class="ptag">Chargeback</span></div>
+        <span class="read-btn">Read article →</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+<footer>
+  <div class="foot-inner">
+    <div class="foot-copy">© 2025 Senthilkumar Sivakumar · DXC Technology</div>
+    <div class="foot-links">
+      <a href="#" onclick="showPage('home');return false">Hub</a>
+      <a href="#" onclick="showWorld('ea-world');return false">EA World</a><a href="#" onclick="showWorld('multicloud-world');return false">Multi-Cloud World</a><a href="#" onclick="showWorld('ai-world');return false">AI World</a><a href="#" onclick="showWorld('data-world');return false">Data World</a><a href="#" onclick="showWorld('presales-world');return false">Presales & Leadership</a>
+    </div>
+  </div>
+</footer>
+</div>
+
+<div class="page" id="page-ai-world" data-accent="#533AB7" data-accent-l="#EEEDFE" data-accent-d="#3C3489">
+<div class="container">
+
+  <div class="world-hero">
+    <div class="world-eyebrow">🤖 AI / Agentic / ML / MCP / RAG World</div>
+    <h1 class="world-title"><em>AI World</em> — AWS Bedrock</h1>
+    <p class="world-desc">Production-grade agentic AI architectures on AWS Bedrock, Model Context Protocol (MCP) semantic designs, RAG pipeline engineering, and MLOps delivery. Every pattern is derived from a real banking, insurance, or public-sector engagement — with regulatory compliance (EU AI Act, SR 11-7, FCA AI Guidance) baked in from day one.</p>
+    <div class="pub-row">
+      <a class="pub-btn primary" href="https://senthilkumar-sivakumar.github.io/ai-world" target="_blank" style="background:#533AB7;border-color:#3C3489">🌐 Web Publication</a>
+      <a class="pub-btn ghost" href="https://github.com/senthilkumar-sivakumar/ai-world" target="_blank">⬡ GitHub Repo</a>
+      <a class="pub-btn ghost" href="https://medium.com/@ss-ai-world" target="_blank">Medium Blog</a>
+      <a class="pub-btn ghost" href="https://dev.to/senthilkumarai-world" target="_blank">Dev.to</a>
+    </div>
+  </div>
+
+  <div class="stats-row">
+    <div class="stat-box"><div class="stat-val">Bedrock</div><div class="stat-lbl">Multi-Agent Orchestration</div></div><div class="stat-box"><div class="stat-val">MCP</div><div class="stat-lbl">Protocol Design</div></div><div class="stat-box"><div class="stat-val">RAG</div><div class="stat-lbl">OpenSearch · Kendra</div></div><div class="stat-box"><div class="stat-val">MLOps</div><div class="stat-lbl">SageMaker CI/CD</div></div><div class="stat-box"><div class="stat-val">EU AI Act</div><div class="stat-lbl">Art. 9, 13, 17</div></div>
+  </div>
+
+  <div class="sec-lbl">Core skills & stack</div>
+  <div class="skills-row">
+    <span class="sk">AWS Bedrock Agents</span><span class="sk">Model Context Protocol (MCP)</span><span class="sk">LangGraph</span><span class="sk">RAG / RAGAS Evaluation</span><span class="sk">Claude 3.x Sonnet</span><span class="sk">Amazon OpenSearch</span><span class="sk">Amazon Kendra</span><span class="sk">SageMaker MLOps</span><span class="sk">Bedrock Guardrails</span><span class="sk">XGBoost · LightGBM</span><span class="sk">EU AI Act</span><span class="sk">SR 11-7</span><span class="sk">FCA AI Guidance</span><span class="sk">Vector Databases</span><span class="sk">Amazon Neptune GraphRAG</span><span class="sk">Prompt Engineering</span><span class="sk">Fine-tuning</span>
+  </div>
+
+  <div class="sec-lbl">Real-world scenario portfolio</div>
+  <div class="scenario-grid">
+    
+    <div class="sc">
+      <span class="sc-sector Banking">Banking</span>
+      <div class="sc-title">7-Agent Fraud & AML Detection on AWS Bedrock</div>
+      <div class="sc-challenge">34% false positive rate in existing rule-based AML system generating 12,000 manual reviews/day; JMLSG guidance requiring full explainability on every SAR decision; SR 11-7 model validation mandatory.</div>
+      <div class="sc-outcome"><strong>Outcome</strong>False positive rate reduced from 34% to 8.2%; SAR auto-narration with full audit trail; SR 11-7 model validation passed first cycle; 12,000 manual reviews/day reduced to 1,800.</div>
+    </div>
+    <div class="sc">
+      <span class="sc-sector Public Sector">Public Sector</span>
+      <div class="sc-title">RAG-Powered Procurement Policy Assistant — NHS</div>
+      <div class="sc-challenge">3,200-page NHS procurement policy corpus across 14 policy versions; frontline staff making non-compliant purchasing decisions costing £800K/year; no semantic search capability.</div>
+      <div class="sc-outcome"><strong>Outcome</strong>Policy query accuracy 94.7% (RAGAS faithfulness); £620K saving from reduced non-compliant purchasing in Year 1; deployed to 400 frontline procurement staff across 23 trusts.</div>
+    </div>
+    <div class="sc">
+      <span class="sc-sector Insurance">Insurance</span>
+      <div class="sc-title">Agentic AI for Indenture Contract Analysis at 50K/day</div>
+      <div class="sc-challenge">50,000 indenture PDF contracts/day; average human review time 18 minutes; high-risk clause extraction required for ISDA/CLO compliance; Solvency II data lineage mandatory for all extracted data.</div>
+      <div class="sc-outcome"><strong>Outcome</strong>Contract review time reduced from 18 minutes to 47 seconds; 99.1% clause recall on held-out validation set; full Solvency II lineage graph in Neptune; zero human review required for standard contracts.</div>
+    </div>
+    <div class="sc">
+      <span class="sc-sector Retail">Retail</span>
+      <div class="sc-title">MCP-Powered Personalisation Engine</div>
+      <div class="sc-challenge">12 disconnected personalisation signals (web, loyalty, POS, returns, wishlist, email, app, in-store, social, search, reviews, support) with no unified context model; recommendation CTR 1.8%; context window overflow on LLM calls.</div>
+      <div class="sc-outcome"><strong>Outcome</strong>CTR lifted from 1.8% to 6.4% (A/B test, p<0.001); average basket size +12%; context window usage reduced 60% vs naive concatenation approach.</div>
+    </div>
+  </div>
+
+  <div class="sec-lbl">Featured blog posts</div>
+  <div class="posts-list">
+    
+    <div class="post-card" onclick="showPost('ai-world',0)">
+      <div class="pm">
+        <span class="pm-date">May 2025</span>
+        <span class="pm-cat" style="background:#EEEDFE;color:#3C3489">Agentic AI · Banking · EU AI Act</span>
+      </div>
+      <div class="post-title">Designing EU AI Act-Compliant Agentic AI for Fraud Detection: 7 Agents, One Audit Trail</div>
+      <div class="post-exc">The architecture brief for a 7-agent Bedrock system that satisfies Article 9 risk management, Article 13 transparency, and Article 17 quality management simultaneously.</div>
+      <div class="post-foot">
+        <div class="pt-tags"><span class="ptag">EU AI Act</span><span class="ptag">Bedrock</span><span class="ptag">AML</span><span class="ptag">Article 9</span><span class="ptag">Article 13</span></div>
+        <span class="read-btn">Read article →</span>
+      </div>
+    </div>
+    <div class="post-card" onclick="showPost('ai-world',1)">
+      <div class="pm">
+        <span class="pm-date">March 2025</span>
+        <span class="pm-cat" style="background:#EEEDFE;color:#3C3489">MCP · RAG · Semantic Architecture</span>
+      </div>
+      <div class="post-title">Model Context Protocol: The Missing Semantic Layer in Enterprise RAG Architectures</div>
+      <div class="post-exc">Why traditional RAG pipelines fail at enterprise scale — and how MCP's structured context slots solve the 'which version of truth?' problem when 12 upstream systems each have their own customer definition.</div>
+      <div class="post-foot">
+        <div class="pt-tags"><span class="ptag">MCP</span><span class="ptag">RAG</span><span class="ptag">RAGAS</span><span class="ptag">Semantic Layer</span><span class="ptag">Hallucination</span></div>
+        <span class="read-btn">Read article →</span>
+      </div>
+    </div>
+    <div class="post-card" onclick="showPost('ai-world',2)">
+      <div class="pm">
+        <span class="pm-date">January 2025</span>
+        <span class="pm-cat" style="background:#EEEDFE;color:#3C3489">MLOps · SageMaker · SR 11-7</span>
+      </div>
+      <div class="post-title">SR 11-7 Model Risk Management in a SageMaker MLOps Pipeline: What the Fed Actually Expects</div>
+      <div class="post-exc">Mapping SageMaker Model Registry, Model Monitor, and Clarify outputs to the SR 11-7 validation documentation checklist — a practical guide for ML engineers satisfying model risk officers.</div>
+      <div class="post-foot">
+        <div class="pt-tags"><span class="ptag">SR 11-7</span><span class="ptag">SageMaker</span><span class="ptag">MLOps</span><span class="ptag">Model Risk</span><span class="ptag">CI/CD</span></div>
+        <span class="read-btn">Read article →</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+<footer>
+  <div class="foot-inner">
+    <div class="foot-copy">© 2025 Senthilkumar Sivakumar · DXC Technology</div>
+    <div class="foot-links">
+      <a href="#" onclick="showPage('home');return false">Hub</a>
+      <a href="#" onclick="showWorld('ea-world');return false">EA World</a><a href="#" onclick="showWorld('multicloud-world');return false">Multi-Cloud World</a><a href="#" onclick="showWorld('ai-world');return false">AI World</a><a href="#" onclick="showWorld('data-world');return false">Data World</a><a href="#" onclick="showWorld('presales-world');return false">Presales & Leadership</a>
+    </div>
+  </div>
+</footer>
+</div>
+
+<div class="page" id="page-data-world" data-accent="#BA7517" data-accent-l="#FAEEDA" data-accent-d="#854F0B">
+<div class="container">
+
+  <div class="world-hero">
+    <div class="world-eyebrow">📊 Data Architecture World</div>
+    <h1 class="world-title"><em>Data World</em> — Data Mesh</h1>
+    <p class="world-desc">Enterprise data platform designs — Data Mesh, Data Lakehouse, real-time streaming, and analytics engineering — drawn from live delivery across NHS, banking, retail, and insurance clients. Every pattern is grounded in real regulatory and operational constraints: BCBS 239, GDPR, DORA, NHS DSP, and Solvency II.</p>
+    <div class="pub-row">
+      <a class="pub-btn primary" href="https://senthilkumar-sivakumar.github.io/data-world" target="_blank" style="background:#BA7517;border-color:#854F0B">🌐 Web Publication</a>
+      <a class="pub-btn ghost" href="https://github.com/senthilkumar-sivakumar/data-world" target="_blank">⬡ GitHub Repo</a>
+      <a class="pub-btn ghost" href="https://medium.com/@ss-data-world" target="_blank">Medium Blog</a>
+      <a class="pub-btn ghost" href="https://dev.to/senthilkumardata-world" target="_blank">Dev.to</a>
+    </div>
+  </div>
+
+  <div class="stats-row">
+    <div class="stat-box"><div class="stat-val">Data Mesh</div><div class="stat-lbl">9-Layer Architecture</div></div><div class="stat-box"><div class="stat-val">Lakehouse</div><div class="stat-lbl">Delta · Iceberg</div></div><div class="stat-box"><div class="stat-val">BCBS 239</div><div class="stat-lbl">Lineage Compliance</div></div><div class="stat-box"><div class="stat-val">203% ROI</div><div class="stat-lbl">NHS Analytics</div></div><div class="stat-box"><div class="stat-val">CRISP-DM</div><div class="stat-lbl">ML Delivery Method</div></div>
+  </div>
+
+  <div class="sec-lbl">Core skills & stack</div>
+  <div class="skills-row">
+    <span class="sk">Data Mesh</span><span class="sk">Delta Lake</span><span class="sk">Apache Iceberg</span><span class="sk">Databricks</span><span class="sk">Oracle Analytics Cloud</span><span class="sk">Oracle Machine Learning</span><span class="sk">AWS Glue</span><span class="sk">AWS DMS</span><span class="sk">Amazon Kinesis</span><span class="sk">dbt</span><span class="sk">Collibra</span><span class="sk">Great Expectations</span><span class="sk">BCBS 239</span><span class="sk">GDPR Art. 30</span><span class="sk">CRISP-DM</span><span class="sk">XGBoost</span><span class="sk">COREP/FINREP</span><span class="sk">NHS DSP</span><span class="sk">Solvency II</span>
+  </div>
+
+  <div class="sec-lbl">Real-world scenario portfolio</div>
+  <div class="scenario-grid">
+    
+    <div class="sc">
+      <span class="sc-sector Banking">Banking</span>
+      <div class="sc-title">BCBS 239-Compliant Data Lineage Platform for Tier-2 Bank</div>
+      <div class="sc-challenge">ECB SREP finding: inability to produce accurate risk aggregation reports within regulatory deadlines. 14 data domains, no automated lineage, FINREP restatements occurring quarterly due to data quality failures.</div>
+      <div class="sc-outcome"><strong>Outcome</strong>End-to-end lineage from source to regulatory report in Collibra; FINREP restatements eliminated; ECB SREP finding formally closed in Supervisory Cycle 3.</div>
+    </div>
+    <div class="sc">
+      <span class="sc-sector Public Sector">Public Sector</span>
+      <div class="sc-title">Oracle Analytics Cloud for NHS Supply Chain: 203% ROI</div>
+      <div class="sc-challenge">23 NHS trusts with no consolidated spend analytics; £800K/year in duplicate supplier payments; demand forecasting done manually in Excel with 40% forecast error rate.</div>
+      <div class="sc-outcome"><strong>Outcome</strong>Forecast error reduced from 40% to 11%; £6.38M procurement savings Year 1; 203% 3-year ROI; deployed to 23 trusts with self-service analytics for procurement directors.</div>
+    </div>
+    <div class="sc">
+      <span class="sc-sector Retail">Retail</span>
+      <div class="sc-title">Real-Time Anomaly Detection for Retail Fraud on AWS</div>
+      <div class="sc-challenge">£4.2M annual losses from returns fraud and coupon abuse; batch detection running 24-hour lag; unable to act on live transaction signals; no streaming infrastructure.</div>
+      <div class="sc-outcome"><strong>Outcome</strong>Detection latency <250ms (from 24 hours); £3.1M fraud prevented in Year 1; SageMaker model F1 score 0.91 on held-out test set.</div>
+    </div>
+    <div class="sc">
+      <span class="sc-sector Banking">Banking</span>
+      <div class="sc-title">9-Layer Data Mesh for Wealth Management: COREP/FINREP Automation</div>
+      <div class="sc-challenge">3,400 person-hours per quarter consumed by regulatory reporting; COREP/FINREP produced manually from 7 source systems; data quality SLA of 99.9% unachievable; ECB identified data quality as a material risk.</div>
+      <div class="sc-outcome"><strong>Outcome</strong>COREP/FINREP reporting time reduced from 3,400 to 880 person-hours/quarter (74%); data quality SLA achieved at 99.97%; ECB material risk finding downgraded.</div>
+    </div>
+  </div>
+
+  <div class="sec-lbl">Featured blog posts</div>
+  <div class="posts-list">
+    
+    <div class="post-card" onclick="showPost('data-world',0)">
+      <div class="pm">
+        <span class="pm-date">April 2025</span>
+        <span class="pm-cat" style="background:#FAEEDA;color:#854F0B">Data Mesh · Banking · BCBS 239</span>
+      </div>
+      <div class="post-title">Designing a 9-Layer Data Mesh for BCBS 239 Compliance: Topology, Contracts, and Lineage</div>
+      <div class="post-exc">How we structured data product domains to satisfy BCBS 239 Principles 2 and 3 simultaneously, using dbt contracts and Collibra lineage harvesting as the compliance evidence layer.</div>
+      <div class="post-foot">
+        <div class="pt-tags"><span class="ptag">Data Mesh</span><span class="ptag">BCBS 239</span><span class="ptag">dbt</span><span class="ptag">Collibra</span><span class="ptag">Lineage</span></div>
+        <span class="read-btn">Read article →</span>
+      </div>
+    </div>
+    <div class="post-card" onclick="showPost('data-world',1)">
+      <div class="pm">
+        <span class="pm-date">February 2025</span>
+        <span class="pm-cat" style="background:#FAEEDA;color:#854F0B">Oracle Analytics · NHS · ML</span>
+      </div>
+      <div class="post-title">How XGBoost Beat Random Forest for NHS Demand Forecasting — and What the CRISP-DM Trail Looked Like</div>
+      <div class="post-exc">A detailed model selection narrative: feature engineering from 23-trust procurement history, cross-validation under NHS data sharing agreements, and how the GDPR Article 30 processing register shaped the feature store.</div>
+      <div class="post-foot">
+        <div class="pt-tags"><span class="ptag">XGBoost</span><span class="ptag">Random Forest</span><span class="ptag">CRISP-DM</span><span class="ptag">NHS</span><span class="ptag">GDPR</span><span class="ptag">OML</span></div>
+        <span class="read-btn">Read article →</span>
+      </div>
+    </div>
+    <div class="post-card" onclick="showPost('data-world',2)">
+      <div class="pm">
+        <span class="pm-date">December 2024</span>
+        <span class="pm-cat" style="background:#FAEEDA;color:#854F0B">Kinesis · SageMaker · Retail</span>
+      </div>
+      <div class="post-title">Building a 3-Pipeline AWS Anomaly Detection Platform for Retail Fraud: Architecture and Lessons</div>
+      <div class="post-exc">The three-pipeline architecture that takes retail transaction data from source to fraud decision in under 250ms — and the operational lessons from running it at production scale.</div>
+      <div class="post-foot">
+        <div class="pt-tags"><span class="ptag">Kinesis</span><span class="ptag">SageMaker</span><span class="ptag">Lambda</span><span class="ptag">DynamoDB</span><span class="ptag">Anomaly Detection</span></div>
+        <span class="read-btn">Read article →</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+<footer>
+  <div class="foot-inner">
+    <div class="foot-copy">© 2025 Senthilkumar Sivakumar · DXC Technology</div>
+    <div class="foot-links">
+      <a href="#" onclick="showPage('home');return false">Hub</a>
+      <a href="#" onclick="showWorld('ea-world');return false">EA World</a><a href="#" onclick="showWorld('multicloud-world');return false">Multi-Cloud World</a><a href="#" onclick="showWorld('ai-world');return false">AI World</a><a href="#" onclick="showWorld('data-world');return false">Data World</a><a href="#" onclick="showWorld('presales-world');return false">Presales & Leadership</a>
+    </div>
+  </div>
+</footer>
+</div>
+
+<div class="page" id="page-presales-world" data-accent="#993556" data-accent-l="#FBEAF0" data-accent-d="#72243E">
+<div class="container">
+
+  <div class="world-hero">
+    <div class="world-eyebrow">🎯 Presales, Solution Leadership & Client Engagement</div>
+    <h1 class="world-title"><em>Presales & Leadership</em> — C-Suite Engagement</h1>
+    <p class="world-desc">Client-facing solution design, C-level stakeholder engagement, bid architecture, and technical leadership at DXC Technology. From shaping multi-million pound proposals in banking and public sector to mentoring the next generation of solution architects — these posts capture the craft behind the commercial.</p>
+    <div class="pub-row">
+      <a class="pub-btn primary" href="https://senthilkumar-sivakumar.github.io/presales-world" target="_blank" style="background:#993556;border-color:#72243E">🌐 Web Publication</a>
+      <a class="pub-btn ghost" href="https://github.com/senthilkumar-sivakumar/presales-world" target="_blank">⬡ GitHub Repo</a>
+      <a class="pub-btn ghost" href="https://medium.com/@ss-presales-world" target="_blank">Medium Blog</a>
+      <a class="pub-btn ghost" href="https://dev.to/senthilkumarpresales-world" target="_blank">Dev.to</a>
+    </div>
+  </div>
+
+  <div class="stats-row">
+    <div class="stat-box"><div class="stat-val">C-Suite</div><div class="stat-lbl">Stakeholder Engagement</div></div><div class="stat-box"><div class="stat-val">£Multi-M</div><div class="stat-lbl">Bids Shaped</div></div><div class="stat-box"><div class="stat-val">SAFe</div><div class="stat-lbl">PI Planning Lead</div></div><div class="stat-box"><div class="stat-val">MSc</div><div class="stat-lbl">Data Analytics</div></div><div class="stat-box"><div class="stat-val">L7</div><div class="stat-lbl">Digital Apprenticeship</div></div>
+  </div>
+
+  <div class="sec-lbl">Core skills & stack</div>
+  <div class="skills-row">
+    <span class="sk">Solution Architecture Presales</span><span class="sk">Technology Business Management (TBM)</span><span class="sk">SAFe Agile PI Planning</span><span class="sk">C-Suite Stakeholder Engagement</span><span class="sk">G-Cloud Framework</span><span class="sk">OJEU/PCR 2015</span><span class="sk">Bid Architecture</span><span class="sk">Commercial Modelling</span><span class="sk">DORA Metrics</span><span class="sk">RACI Design</span><span class="sk">SLA Framework Design</span><span class="sk">Oracle HCM/ERP</span><span class="sk">SFIA 8 Competency Framework</span><span class="sk">Mentoring & Coaching</span>
+  </div>
+
+  <div class="sec-lbl">Real-world scenario portfolio</div>
+  <div class="scenario-grid">
+    
+    <div class="sc">
+      <span class="sc-sector Banking">Banking</span>
+      <div class="sc-title">£28M Cloud Migration Bid — Tier-1 UK Bank</div>
+      <div class="sc-challenge">4-week bid window; client CTO requiring quantified business case; competing against two Big-4 firms; no pre-existing relationship with client EA team; complex regulatory overlay (PRA, FCA, DORA).</div>
+      <div class="sc-outcome"><strong>Outcome</strong>Bid won; TBM business case cited as primary differentiator in client debrief; CTO quoted the unit economics model verbatim in the internal approval paper; contract signed Q2 2024.</div>
+    </div>
+    <div class="sc">
+      <span class="sc-sector Public Sector">Public Sector</span>
+      <div class="sc-title">NHS Oracle HCM/ERP — G-Cloud SQ Score 92/100</div>
+      <div class="sc-challenge">NHS trust requiring Oracle HCM and ERP on G-Cloud 13 framework; 2-week Selection Questionnaire window; complex TUPE obligations for 4,200 staff; ESR (Electronic Staff Record) integration requirements.</div>
+      <div class="sc-outcome"><strong>Outcome</strong>SQ scored 92/100 — highest in the evaluation; shortlisted to ITT; TUPE strategy and ESR integration approach specifically cited as evaluation strengths.</div>
+    </div>
+    <div class="sc">
+      <span class="sc-sector Retail">Retail</span>
+      <div class="sc-title">DXC Retail AI Proposition: £4.5M Pipeline in 90 Days</div>
+      <div class="sc-challenge">DXC had no structured AI proposition for UK retail sector; three target retail accounts engaged at Discovery stage but no differentiated offering; needed an AI-native commercial narrative for CFO-level conversations.</div>
+      <div class="sc-outcome"><strong>Outcome</strong>£4.5M pipeline created across three accounts within 90 days of proposition launch; two accounts progressed to active deal stage; one Assess engagement signed within 60 days.</div>
+    </div>
+    <div class="sc">
+      <span class="sc-sector Banking">Banking</span>
+      <div class="sc-title">SAFe PI Planning Leadership — 12-Team Financial Services ART</div>
+      <div class="sc-challenge">12-team SAFe ART across UK, India, and US time zones; previous PI had 38% feature carry-over; dependency management breaking down between data, cloud, and application delivery trains; team NPS at 41.</div>
+      <div class="sc-outcome"><strong>Outcome</strong>Feature carry-over reduced from 38% to 9%; team NPS improved from 41 to 74; Architecture Sync adopted as permanent ART ceremony; DORA metrics (deployment frequency, change failure rate) both improved in the PI.</div>
+    </div>
+  </div>
+
+  <div class="sec-lbl">Featured blog posts</div>
+  <div class="posts-list">
+    
+    <div class="post-card" onclick="showPost('presales-world',0)">
+      <div class="pm">
+        <span class="pm-date">May 2025</span>
+        <span class="pm-cat" style="background:#FBEAF0;color:#72243E">Presales · Banking · TBM</span>
+      </div>
+      <div class="post-title">Winning a £28M Bank Bid in 4 Weeks: The Business Case Architecture That Made the Difference</div>
+      <div class="post-exc">How Technology Business Management translated 'cloud migration' into a board-level financial narrative — moving the conversation from speeds-and-feeds to unit economics, tax efficiency, and risk-adjusted NPV.</div>
+      <div class="post-foot">
+        <div class="pt-tags"><span class="ptag">TBM</span><span class="ptag">Presales</span><span class="ptag">Commercial Architecture</span><span class="ptag">PRA</span><span class="ptag">DORA</span></div>
+        <span class="read-btn">Read article →</span>
+      </div>
+    </div>
+    <div class="post-card" onclick="showPost('presales-world',1)">
+      <div class="pm">
+        <span class="pm-date">March 2025</span>
+        <span class="pm-cat" style="background:#FBEAF0;color:#72243E">Leadership · SAFe · Architecture</span>
+      </div>
+      <div class="post-title">Reducing SAFe PI Carry-Over from 38% to 9%: A Dependency Architecture Retrospective</div>
+      <div class="post-exc">The root cause of cross-team dependency failures in large financial services ARTs is almost always an architecture problem, not a process problem.</div>
+      <div class="post-foot">
+        <div class="pt-tags"><span class="ptag">SAFe</span><span class="ptag">PI Planning</span><span class="ptag">Dependencies</span><span class="ptag">Architecture</span><span class="ptag">ART</span></div>
+        <span class="read-btn">Read article →</span>
+      </div>
+    </div>
+    <div class="post-card" onclick="showPost('presales-world',2)">
+      <div class="pm">
+        <span class="pm-date">January 2025</span>
+        <span class="pm-cat" style="background:#FBEAF0;color:#72243E">Mentoring · Career Development</span>
+      </div>
+      <div class="post-title">From Graduate to Solution Architect in 3 Years: A Structured Mentoring Framework</div>
+      <div class="post-exc">The mentoring approach I use with junior architects at DXC — combining weekly architecture reviews, deliberate client exposure, and a competency model mapped to SFIA 8.</div>
+      <div class="post-foot">
+        <div class="pt-tags"><span class="ptag">Mentoring</span><span class="ptag">SFIA 8</span><span class="ptag">Career Development</span><span class="ptag">Architecture</span><span class="ptag">DXC</span></div>
+        <span class="read-btn">Read article →</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+<footer>
+  <div class="foot-inner">
+    <div class="foot-copy">© 2025 Senthilkumar Sivakumar · DXC Technology</div>
+    <div class="foot-links">
+      <a href="#" onclick="showPage('home');return false">Hub</a>
+      <a href="#" onclick="showWorld('ea-world');return false">EA World</a><a href="#" onclick="showWorld('multicloud-world');return false">Multi-Cloud World</a><a href="#" onclick="showWorld('ai-world');return false">AI World</a><a href="#" onclick="showWorld('data-world');return false">Data World</a><a href="#" onclick="showWorld('presales-world');return false">Presales & Leadership</a>
+    </div>
+  </div>
+</footer>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════════════════ -->
+<!-- BLOG POST READER                                                        -->
+<!-- ════════════════════════════════════════════════════════════════════════ -->
+<div id="post-reader">
+<div class="container">
+  <div class="post-reader-hero">
+    <button class="back-btn" id="post-back-btn">← Back</button>
+    <div class="world-eyebrow" id="pr-eyebrow"></div>
+    <div class="pm" id="pr-meta" style="margin-bottom:.875rem"></div>
+    <h1 class="post-full-title" id="pr-title"></h1>
+    <p class="post-full-exc" id="pr-excerpt"></p>
+    <div class="pt-tags" id="pr-tags" style="margin-top:.75rem"></div>
+  </div>
+  <div class="post-body" id="pr-body"></div>
+  <div class="pub-row" style="margin-bottom:3rem">
+    <button class="pub-btn primary" id="pr-back2" onclick="">← All Posts</button>
+    <a class="pub-btn ghost" id="pr-gh-link" href="#" target="_blank">GitHub Repo</a>
+  </div>
+</div>
+<footer>
+  <div class="foot-inner">
+    <div class="foot-copy">© 2025 Senthilkumar Sivakumar · DXC Technology</div>
+    <div class="foot-links">
+      <a href="#" onclick="showPage('home');return false">Hub</a>
+      <a href="#" onclick="showWorld('ea-world');return false">EA World</a><a href="#" onclick="showWorld('multicloud-world');return false">Multi-Cloud World</a><a href="#" onclick="showWorld('ai-world');return false">AI World</a><a href="#" onclick="showWorld('data-world');return false">Data World</a><a href="#" onclick="showWorld('presales-world');return false">Presales & Leadership</a>
+    </div>
+  </div>
+</footer>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════════════════ -->
+<!-- DATA & SCRIPT                                                           -->
+<!-- ════════════════════════════════════════════════════════════════════════ -->
+<script>
+const WORLDS = [{"id":"ea-world","slug":"ea-world","name":"EA World","fullName":"Enterprise Architecture World","tagline":"TOGAF ADM · ArchiMate 3.1 · Regulatory-Aligned Reference Solutions","color":"#185FA5","colorLight":"#E6F1FB","colorDark":"#0C447C","icon":"🏛️","description":"Real-world enterprise architecture patterns, TOGAF ADM reference solutions, ArchiMate 3.1 full-stack modelling, and regulatory-aligned design decisions for complex, multi-stakeholder programmes. Every entry reflects a real engagement outcome — anonymised per client confidentiality.","stats":[{"val":"18+","label":"Years EA Practice"},{"val":"TOGAF","label":"ADM Phases A–H"},{"val":"ArchiMate","label":"3.1 Full Stack"},{"val":"EU AI Act","label":"Compliance Aligned"},{"val":"3","label":"Regulated Sectors"}],"skills":["TOGAF ADM A–H","ArchiMate 3.1","Zachman Framework","SABSA Security","EU AI Act","DORA","GDPR","SR 11-7","FCA / PRA","BCBS 239","Basel IV","MiFID II","Sparx EA","Ardoq","LeanIX","COREP/FINREP"],"scenarios":[{"sector":"Banking","title":"TOGAF ADM Phase A–H: Retail Bank Modernisation","challenge":"Legacy core banking on IBM mainframe; 14 siloed LOB applications; no shared capability model. Mandate: migrate to cloud-native, reduce TTM by 60%.","approach":"Led Architecture Vision (Phase A) workshops with C-suite; built 42-domain capability model in ArchiMate; sequenced migration waves using Phase E gap analysis and Phase F migration roadmap. TBM cost model built for board sign-off.","outcome":"42 capability domains mapped; ArchiMate roadmap board-approved; £4.2M YoY savings from decommissioned redundant capabilities.","tags":["TOGAF","ArchiMate","Core Banking","TBM"]},{"sector":"Public Sector","title":"NHS Supply Chain — Reference EA for Procurement Platform","challenge":"23 NHS trusts with fragmented procurement data, no enterprise data model, duplicated supplier master records causing £6.4M annual overspend.","approach":"Delivered TOGAF Phase B Business Architecture with canonical procurement ontology; Phase C IS/Technology architectures aligned to NHS DSP and GDPR Article 30; ArchiMate motivation viewpoints mapped to NHS Long Term Plan.","outcome":"Single canonical procurement ontology; TOGAF Phase B–D artefacts ratified; £6.38M savings realised in Year 1; 203% 3-year ROI.","tags":["TOGAF","NHS","Public Sector","Procurement"]},{"sector":"Retail","title":"Omnichannel Target Architecture — UK Retailer S/4HANA Migration","challenge":"Tier-1 UK retailer running SAP ECC 6.0 with 11 custom bolt-ons; 240+ point-to-point integration interfaces; S/4HANA migration scope undefined and budget contested.","approach":"Phase B capability heat-map identified 38 canonical API contracts replacing 240 interfaces; Phase C technology architecture defined event-driven integration on Azure Service Bus; Phase E sequenced 4 migration waves with risk-adjusted cost model.","outcome":"Integration debt reduced from 240 to 38 canonical APIs; migration waves sequenced and funded; 31% TCO reduction projected over 3 years.","tags":["SAP","S/4HANA","Retail","Integration Architecture"]},{"sector":"Insurance","title":"London Market Insurance — Post-Merger EA Governance","challenge":"Lloyd's syndicate post-merger integration; two conflicting enterprise architectures; GDPR accountability gaps; Solvency II data lineage absent.","approach":"Merged ArchiMate models from both entities; established EA governance board with ToR aligned to TOGAF Architecture Board concept; built Solvency II data lineage in Collibra covering all 14 reporting data domains.","outcome":"Merged ArchiMate model live in 6 weeks; 100% Solvency II lineage coverage; FCA change-of-control notification supported; EA governance board operational in 8 weeks.","tags":["Lloyd's","Solvency II","Governance","FCA"]}],"posts":[{"date":"April 2025","category":"TOGAF · Banking","title":"Applying TOGAF ADM to an AI-Augmented Core Banking Transformation — a GlobalBank Case Study","excerpt":"Walking through all eight ADM phases on a live engagement: how Phase A vision statements translate into EU AI Act Article 9 risk management obligations, and how Phase E migration planning must account for model drift SLAs alongside classic application portfolio rationalisation.","content":"<p>When GlobalBank engaged DXC to architect their AI-augmented core banking transformation, the first question from the CTO was predictable: \"Do we need TOGAF for this, or is it too bureaucratic?\" Twelve months later, having navigated PRA model risk reviews, EBA ICT resilience requirements, and an EU AI Act Article 9 audit, the answer was unambiguous.</p>\n<h2>Phase A: Architecture Vision with AI Risk Baked In</h2>\n<p>Most TOGAF engagements treat Phase A as a stakeholder alignment exercise. In a regulated AI context, it must also establish the AI risk appetite statement — the document that will govern every AI architecture decision downstream. We used the PERA (Principle–Exception–Review–Audit) model to encode eight AI governance principles into the Architecture Vision, each traceable to an EU AI Act obligation.</p>\n<h2>Phase B: Business Architecture and Human-in-the-Loop Requirements</h2>\n<p>The Business Architecture phase surfaced 14 business processes where AI would be making consequential decisions — credit scoring, transaction monitoring, customer onboarding. For each, EU AI Act Article 14 requires meaningful human oversight. We encoded this as a business capability: \"Supervised AI Decision Review\", owned by the Chief Risk Officer's function.</p>\n<h2>Phase E: Migration Planning and Model Drift SLAs</h2>\n<p>Classic Phase E migration planning sequences application retirement and data migration. In an AI context, there is a third dimension: model lifecycle events. We introduced \"AI Migration Events\" into the migration roadmap — scheduled retraining windows, champion/challenger switchovers, and model retirement gates — each with an associated SLA and rollback procedure.</p>\n<h2>Outcome</h2>\n<p>The TOGAF ADM framework provided the regulatory audit trail the PRA required. Phase A principles were directly cited in the model risk validation report. The EU AI Act Article 9 quality management system was structured around Phase H change management procedures. The architecture wasn't bureaucratic — it was the compliance evidence.</p>","tags":["TOGAF","EU AI Act","Core Banking","PRA"]},{"date":"February 2025","category":"ArchiMate · Public Sector","title":"ArchiMate 3.1 Full-Stack Modelling for NHS Supply Chain: Lessons from 23 Trusts","excerpt":"Practical ArchiMate modelling decisions when the motivation layer must capture 23 different NHS trust strategies simultaneously, and how the strategy and implementation layers diverge under NHS procurement law constraints.","content":"<p>Modelling enterprise architecture for a single organisation is tractable. Modelling it for 23 NHS trusts — each with their own Board, their own IT strategy, and their own interpretation of NHS procurement policy — requires deliberate decisions about where the canonical model lives and where trust-specific views branch off.</p>\n<h2>The Motivation Layer Problem</h2>\n<p>ArchiMate's motivation layer (goals, drivers, assessments, principles) is straightforward when there is one strategy. With 23 trusts, we made a structural decision: NHS Supply Chain's enterprise strategy occupies the canonical motivation layer; individual trust strategies are modelled as Assessment elements that either support or constrain the canonical goals. This keeps the model navigable without losing trust-specific context.</p>\n<h2>Strategy Layer: Where Things Diverged</h2>\n<p>The strategy layer — capabilities, resources, value streams — was where procurement law created the most interesting modelling challenges. Under the Public Contracts Regulations 2015, framework call-off processes must be architecturally distinct from open competition processes. We modelled these as separate value stream segments with explicit legal obligation elements in the motivation layer linking to each.</p>\n<h2>Implementation Layer: 23 Trust Deployment Variants</h2>\n<p>Rather than modelling 23 separate implementation architectures, we used ArchiMate's configuration concept to define a canonical implementation architecture with 4 configuration variants — representing the four procurement maturity tiers identified across the trusts. Each trust maps to a variant, and variant-specific elements are tagged with the trust identifiers they apply to.</p>","tags":["ArchiMate 3.1","NHS","Public Sector","Procurement Law"]},{"date":"January 2025","category":"Governance · Insurance","title":"Standing Up an EA Governance Board Post-Merger in 8 Weeks — Lloyd's Case Study","excerpt":"How we used TOGAF's Architecture Board concept and ArchiMate motivation viewpoints to align two competing IT strategies within a Lloyd's syndicate merger, satisfying FCA change-of-control requirements on schedule.","content":"<p>Post-merger EA governance is one of the hardest architectural problems in regulated financial services. You have two functioning teams, two technology stacks, two sets of architecture principles — and an FCA change-of-control notification window that waits for no one.</p>\n<h2>Week 1–2: Landscape Assessment</h2>\n<p>We ran parallel ArchiMate motivation-layer sessions with both legacy EA teams, deliberately avoiding any discussion of \"whose model wins\". The output was two motivation layers laid side-by-side, with conflicts encoded as Assessment elements with negative influence relationships. This made the disagreements architectural — discussable, traceable, and resolvable — rather than political.</p>\n<h2>Week 3–4: Merged Principles and ToR</h2>\n<p>The merged Architecture Principles document was drafted from the union of both sets, with explicit conflict resolution notes where they diverged. The Architecture Board Terms of Reference were structured around TOGAF's Architecture Board concept but constrained to the FCA's Senior Manager accountability regime — every board decision required a named SMF-accountable individual.</p>\n<h2>Week 5–8: First Governance Cycle</h2>\n<p>The first Architecture Review Board cycle covered the 6 most time-critical integration decisions: identity federation, network interconnect, data replication for Solvency II, application portfolio rationalisation scope, API gateway consolidation, and security operations centre integration. Each produced an Architecture Decision Record (ADR) with full ArchiMate traceability.</p>","tags":["Governance","FCA","Lloyd's","TOGAF","ArchiMate"]}]},{"id":"multicloud-world","slug":"multicloud-world","name":"Multi-Cloud World","fullName":"Multi-Cloud Architecture World","tagline":"AWS · Azure · Oracle OCI · Hybrid & Multi-Cloud Reference Designs","color":"#0F6E56","colorLight":"#E1F5EE","colorDark":"#085041","icon":"☁️","description":"Production-tested cloud solution designs across AWS, Azure, Oracle OCI, and hybrid/multi-cloud platforms. Real architectural trade-off analyses, landing zone blueprints, FinOps outcomes, and security posture decisions — drawn from live client engagements in banking, public sector, insurance, and retail.","stats":[{"val":"AWS","label":"Bedrock · EKS · RDS"},{"val":"Azure","label":"AZ-305 · AZ-500"},{"val":"OCI","label":"ExaCC · ADW · OKE"},{"val":"FinOps","label":"Cost Governance"},{"val":"Zero Trust","label":"Security Posture"}],"skills":["AWS Bedrock","Amazon EKS","AWS DMS","AWS Glue","Amazon Kinesis","Azure Landing Zones","Azure Service Bus","AKS","Azure Firewall","OCI ExaCC","Oracle ADW","OCI OKE","Terraform","Ansible","FinOps","DORA ICT Resilience","Zero Trust","NCSC Cyber Essentials"],"scenarios":[{"sector":"Banking","title":"AWS + Azure Active-Active Multi-Cloud for DORA Compliance","challenge":"Regulatory requirement for geographic data sovereignty with sub-100ms failover; no single CSP could satisfy DORA's ICT resilience requirements alone. EBA supervisory expectation for documented concentration risk mitigation.","approach":"Designed active-active architecture with AWS eu-west-2 (primary) and Azure UK South (secondary) using AWS Route 53 ARC and Azure Traffic Manager. Custom health-check latency budget of 40ms per hop enforced. GDPR data residency enforced via S3 Object Lock and Azure Policy.","outcome":"99.999% uptime achieved post-cutover; RTO <90 seconds validated in DR exercise; DORA Article 11 ICT resilience compliance evidenced to EBA supervisor.","tags":["DORA","AWS","Azure","ICT Resilience","EBA"]},{"sector":"Public Sector","title":"Oracle ExaCC Golden Image Pipeline — Government Dept.","challenge":"Uncontrolled OS patch drift across 140 VMs on OCI ExaCC; 4-hour manual promotion pipeline; NCSC Cyber Essentials Plus audit failure on patch currency.","approach":"Designed 4-compartment OCI promotion pipeline (Build → Test → UAT → Prod) with Ansible-driven golden image build, Packer for image creation, and OCI Security Zones enforcing compartment policies. Full bash/Ansible test suite with 160 test cases.","outcome":"Patch promotion time reduced from 4 hours to 22 minutes; 100% patch currency achieved; NCSC Cyber Essentials Plus audit passed; zero manual steps in promotion pipeline.","tags":["OCI","ExaCC","Ansible","NCSC","Golden Image"]},{"sector":"Retail","title":"Azure Landing Zone + FinOps for UK Retailer Cloud Migration","challenge":"£2.3M annual cloud overspend across 14 unmanaged Azure subscriptions; zero resource tagging compliance; no cost allocation to business units; shadow IT proliferation.","approach":"Deployed Azure Landing Zone with Management Group hierarchy; enforced tagging policy via Azure Policy with deny effects; built FinOps chargeback model using Azure Cost Management + Power BI; defined 6 cost allocation rules aligned to P&L structure.","outcome":"£1.1M annualised savings in Year 1; 100% resource tagging compliance achieved in 8 weeks; FinOps chargeback model live with monthly board reporting.","tags":["Azure","Landing Zone","FinOps","Cost Management"]},{"sector":"Insurance","title":"OCI + AWS Hybrid: Insurance Indenture Processing at Scale","challenge":"50,000 PDF indenture contracts/day; on-premises OCR pipeline at capacity; 48-hour SLA breached on 30% of contracts; Solvency II data lineage requirements unmet.","approach":"Designed AWS Textract extraction pipeline feeding Amazon Neptune graph database for clause relationship modelling; OCI ADW as analytical layer for actuarial reporting; AWS PrivateLink connecting to OCI FastConnect for secure cross-cloud data transfer.","outcome":"SLA compliance 99.2% (from 70%); Solvency II lineage graph fully populated in Neptune; 40% cost saving vs pure on-premises expansion.","tags":["AWS","OCI","Textract","Neptune","Solvency II"]}],"posts":[{"date":"March 2025","category":"AWS · Azure · DORA","title":"Designing DORA-Compliant ICT Resilience on AWS + Azure: An Active-Active Reference Architecture","excerpt":"How we engineered cross-cloud failover without sacrificing GDPR data residency. Covers Route 53 ARC, Azure Traffic Manager, and the latency budget trade-offs that drove the final design decision.","content":"<p>DORA's ICT resilience requirements, when read carefully, do not prescribe multi-cloud — but they do require that financial entities demonstrate they have addressed concentration risk. For our Tier-1 banking client, a single-cloud architecture could not satisfy the EBA's supervisory expectations on ICT third-party concentration. The active-active multi-cloud design was the answer.</p>\n<h2>The Latency Budget Problem</h2>\n<p>The hardest constraint was a sub-100ms end-to-end failover SLA from the business. AWS Route 53 ARC health checks run every 10 seconds by default — too slow. We configured custom health checks with 5-second intervals and 2-failure thresholds, giving a theoretical minimum detection time of 10 seconds. Azure Traffic Manager was configured in Priority mode with a 10-second probe interval on the secondary endpoint.</p>\n<h2>GDPR Data Residency Under Active-Active</h2>\n<p>Active-active replication between AWS eu-west-2 and Azure UK South keeps all data within the UK — but the replication mechanism matters. We used AWS DMS continuous replication with a dedicated replication instance in a private subnet, connected to Azure via AWS Direct Connect + Azure ExpressRoute in a private peering configuration. No data transits the public internet.</p>\n<h2>DORA Article 11 Evidence Package</h2>\n<p>The EBA supervisor required documented evidence of ICT resilience testing. We designed a quarterly DR exercise framework: failover test (15 minutes), data integrity validation (30 minutes), failback procedure (20 minutes), and an Architecture Decision Record documenting results. The first exercise achieved RTO of 87 seconds — within the 90-second target.</p>","tags":["DORA","AWS","Azure","EBA","DR","Latency"]},{"date":"May 2025","category":"OCI · ExaCC · Public Sector","title":"Oracle ExaCC Golden Image: Building a 4-Compartment Automated Promotion Pipeline","excerpt":"A walkthrough of the Ansible playbooks, OCI compartment policies, and DevSecOps pipeline that reduced our government client's patch promotion time by 90%.","content":"<p>Oracle Exadata Cloud@Customer sits at the intersection of on-premises control and cloud management. For a UK government department with strict NCSC Cyber Essentials Plus requirements, it offered the right security posture — but the operational model had grown organically into a 4-hour manual patching ordeal.</p>\n<h2>The 4-Compartment Model</h2>\n<p>OCI compartments map naturally to promotion stages. We created: BUILD (image construction, accessible only by the pipeline service account), TEST (automated test execution, read-only to auditors), UAT (change manager approval gate), and PROD (locked to pipeline-only writes, with OCI Security Zone enforcement). Cross-compartment promotion requires an approved OCI IAM policy change — creating a natural approval gate.</p>\n<h2>The Ansible Playbook Architecture</h2>\n<p>The golden image build playbook runs 23 roles in sequence: baseline OS hardening (CIS Level 2), Oracle DB patch application, custom NCSC controls, service configuration, and validation. Each role produces a JSON report consumed by the test framework. The full build takes 18 minutes on ExaCC hardware — down from 4 hours of manual work.</p>\n<h2>Evidence Chain for NCSC Audit</h2>\n<p>Every pipeline run produces a signed SBOM (Software Bill of Materials) and a patch evidence report in a format directly usable by the NCSC Cyber Essentials Plus assessor. The government client's audit pass rate went from conditional (with findings) to clean in the first post-pipeline cycle.</p>","tags":["OCI","ExaCC","Ansible","NCSC","DevSecOps","Automation"]},{"date":"January 2025","category":"Azure · FinOps · Retail","title":"£1.1M Saved in Year 1: The Azure FinOps Architecture That Made It Possible","excerpt":"How a Management Group hierarchy, deny-effect Azure Policy, and a FinOps chargeback model transformed a £2.3M annual cloud overspend into a strategic cost advantage.","content":"<p>The UK retailer's Azure environment had grown through a series of project-by-project subscriptions, each provisioned independently with no governance guardrails. By the time we engaged, 14 subscriptions contained over 3,400 resources — fewer than 12% of which had any cost allocation tags. The annual overspend was £2.3M against a £4.1M total Azure commitment.</p>\n<h2>Landing Zone Hierarchy Design</h2>\n<p>We deployed a 3-level Management Group hierarchy: Tenant Root → Business Unit (Retail Operations, E-commerce, Corporate IT) → Environment (Prod, Non-Prod, Sandbox). Azure Policy assignments at the Business Unit level enforced mandatory tags: cost-centre, project-code, environment, owner, data-classification. Deny effects prevented any resource creation without all five tags.</p>\n<h2>FinOps Chargeback Model</h2>\n<p>The chargeback model allocated 85% of costs by tag (direct allocation) and distributed the remaining 15% (shared services, networking, monitoring) by a usage-weighted formula. A Power BI report published to the Finance SharePoint site gave each business unit a monthly view of their cloud spend — the first time any of them had seen accurate numbers. The visibility effect alone drove a 20% reduction in idle resources within 60 days.</p>","tags":["Azure","FinOps","Landing Zone","Policy","Chargeback"]}]},{"id":"ai-world","slug":"ai-world","name":"AI World","fullName":"AI / Agentic / ML / MCP / RAG World","tagline":"AWS Bedrock · MCP · RAG · MLOps · EU AI Act Compliance","color":"#533AB7","colorLight":"#EEEDFE","colorDark":"#3C3489","icon":"🤖","description":"Production-grade agentic AI architectures on AWS Bedrock, Model Context Protocol (MCP) semantic designs, RAG pipeline engineering, and MLOps delivery. Every pattern is derived from a real banking, insurance, or public-sector engagement — with regulatory compliance (EU AI Act, SR 11-7, FCA AI Guidance) baked in from day one.","stats":[{"val":"Bedrock","label":"Multi-Agent Orchestration"},{"val":"MCP","label":"Protocol Design"},{"val":"RAG","label":"OpenSearch · Kendra"},{"val":"MLOps","label":"SageMaker CI/CD"},{"val":"EU AI Act","label":"Art. 9, 13, 17"}],"skills":["AWS Bedrock Agents","Model Context Protocol (MCP)","LangGraph","RAG / RAGAS Evaluation","Claude 3.x Sonnet","Amazon OpenSearch","Amazon Kendra","SageMaker MLOps","Bedrock Guardrails","XGBoost · LightGBM","EU AI Act","SR 11-7","FCA AI Guidance","Vector Databases","Amazon Neptune GraphRAG","Prompt Engineering","Fine-tuning"],"scenarios":[{"sector":"Banking","title":"7-Agent Fraud & AML Detection on AWS Bedrock","challenge":"34% false positive rate in existing rule-based AML system generating 12,000 manual reviews/day; JMLSG guidance requiring full explainability on every SAR decision; SR 11-7 model validation mandatory.","approach":"Designed 7-agent Bedrock supervisor architecture: Transaction Profiling Agent, Entity Resolution Agent, Network Analysis Agent (Neptune), Typology Matching Agent, Risk Scoring Agent, Narrative Generation Agent, and Compliance Audit Agent. Bedrock Guardrails enforced PII handling. Every inference produced a machine-readable SR 11-7 model card update.","outcome":"False positive rate reduced from 34% to 8.2%; SAR auto-narration with full audit trail; SR 11-7 model validation passed first cycle; 12,000 manual reviews/day reduced to 1,800.","tags":["Bedrock","AML","SR 11-7","Multi-Agent","JMLSG"]},{"sector":"Public Sector","title":"RAG-Powered Procurement Policy Assistant — NHS","challenge":"3,200-page NHS procurement policy corpus across 14 policy versions; frontline staff making non-compliant purchasing decisions costing £800K/year; no semantic search capability.","approach":"Built RAG pipeline: Amazon Kendra ingesting 14 policy documents with version tagging; Claude 3 Sonnet as generation model; RAGAS evaluation framework measuring faithfulness (0.94), answer relevancy (0.91), and context precision (0.88). Bedrock Guardrails blocked out-of-scope queries.","outcome":"Policy query accuracy 94.7% (RAGAS faithfulness); £620K saving from reduced non-compliant purchasing in Year 1; deployed to 400 frontline procurement staff across 23 trusts.","tags":["RAG","Kendra","NHS","Claude","RAGAS"]},{"sector":"Insurance","title":"Agentic AI for Indenture Contract Analysis at 50K/day","challenge":"50,000 indenture PDF contracts/day; average human review time 18 minutes; high-risk clause extraction required for ISDA/CLO compliance; Solvency II data lineage mandatory for all extracted data.","approach":"7-agent pipeline: PDF Extraction Agent (Textract), Clause Identification Agent, Risk Scoring Agent, ISDA Term Mapping Agent, Neptune Lineage Agent, Solvency II Reporting Agent, Exception Handler Agent. Neptune graph stored full clause-to-source lineage for regulatory audit.","outcome":"Contract review time reduced from 18 minutes to 47 seconds; 99.1% clause recall on held-out validation set; full Solvency II lineage graph in Neptune; zero human review required for standard contracts.","tags":["Bedrock","Textract","Neptune","Solvency II","ISDA","CLO"]},{"sector":"Retail","title":"MCP-Powered Personalisation Engine","challenge":"12 disconnected personalisation signals (web, loyalty, POS, returns, wishlist, email, app, in-store, social, search, reviews, support) with no unified context model; recommendation CTR 1.8%; context window overflow on LLM calls.","approach":"Designed MCP semantic layer as the unified context server: 12 tool definitions exposing each signal source; context prioritisation logic ranking signals by recency and confidence; structured context slots preventing token budget overflow. Claude 3 Sonnet as personalisation model.","outcome":"CTR lifted from 1.8% to 6.4% (A/B test, p<0.001); average basket size +12%; context window usage reduced 60% vs naive concatenation approach.","tags":["MCP","Personalisation","Retail","Claude","A/B Testing"]}],"posts":[{"date":"May 2025","category":"Agentic AI · Banking · EU AI Act","title":"Designing EU AI Act-Compliant Agentic AI for Fraud Detection: 7 Agents, One Audit Trail","excerpt":"The architecture brief for a 7-agent Bedrock system that satisfies Article 9 risk management, Article 13 transparency, and Article 17 quality management simultaneously.","content":"<p>The EU AI Act classifies AML/fraud detection systems as high-risk AI under Annex III. This means Articles 9 (risk management), 10 (data governance), 13 (transparency), 14 (human oversight), and 17 (quality management) all apply — simultaneously, to a system that must also process 50,000 transactions per hour.</p>\n<h2>Article 9: Risk Management as an Architectural Concern</h2>\n<p>Risk management under Article 9 is not a document — it is a runtime process. We implemented this as a dedicated Risk Management Agent in the Bedrock supervisor hierarchy. At every inference, this agent evaluates: (1) input data quality score against a minimum threshold, (2) model confidence against a calibrated operating range, (3) whether the transaction type falls within the validated scope of the model. Below-threshold scores route to the human review queue with a structured rationale.</p>\n<h2>Article 13: Transparency Without Performance Penalty</h2>\n<p>Article 13 requires that high-risk AI systems produce output that is interpretable by the natural persons deploying them. For AML, this means the SAR narrative. We designed the Narrative Generation Agent to produce a structured SAR draft with three mandatory sections: factual transaction summary (grounded in retrieved data), typology match justification (citing the specific FATF/JMLSG typology matched), and confidence statement (including the confidence interval and the factors that would increase or decrease it).</p>\n<h2>Article 17: Quality Management System</h2>\n<p>Every inference updates a SageMaker Model Monitor baseline. Weekly automated reports compare current performance metrics (precision, recall, F1, false positive rate by transaction type) against the validated baseline. Drift beyond defined thresholds triggers an automatic escalation to the model risk committee — before the regulator sees it.</p>","tags":["EU AI Act","Bedrock","AML","Article 9","Article 13"]},{"date":"March 2025","category":"MCP · RAG · Semantic Architecture","title":"Model Context Protocol: The Missing Semantic Layer in Enterprise RAG Architectures","excerpt":"Why traditional RAG pipelines fail at enterprise scale — and how MCP's structured context slots solve the 'which version of truth?' problem when 12 upstream systems each have their own customer definition.","content":"<p>Enterprise RAG pipelines fail not because the retrieval is wrong, but because the context is ambiguous. When a retail LLM call receives 8,000 tokens of customer context assembled by naive concatenation from 12 source systems — each with a different definition of \"customer ID\" — the model cannot reliably resolve which facts belong to which version of the customer record.</p>\n<h2>What MCP Solves</h2>\n<p>The Model Context Protocol defines a structured interface between context providers and the language model. Instead of concatenating raw text, each context source exposes a typed tool definition — with explicit input schemas, output schemas, and confidence metadata. The MCP server is responsible for resolving identity conflicts before context reaches the model's context window.</p>\n<h2>The Retail Implementation</h2>\n<p>For our UK retailer, we defined 12 MCP tool definitions — one per personalisation signal source. The MCP server implemented a three-stage context assembly: identity resolution (matching signals to a single customer entity), recency-weighted prioritisation (recent POS data outweighs 90-day-old email behaviour), and slot allocation (each context slot has a maximum token budget enforced by the MCP server, not the prompt).</p>\n<h2>Measured Impact</h2>\n<p>RAGAS faithfulness improved from 0.71 (naive RAG) to 0.94 (MCP-structured RAG). Context window usage dropped 60%. The biggest surprise: hallucination rate on product recommendations dropped from 4.2% to 0.3% — because the model was no longer trying to reconcile contradictory facts from different context sources.</p>","tags":["MCP","RAG","RAGAS","Semantic Layer","Hallucination"]},{"date":"January 2025","category":"MLOps · SageMaker · SR 11-7","title":"SR 11-7 Model Risk Management in a SageMaker MLOps Pipeline: What the Fed Actually Expects","excerpt":"Mapping SageMaker Model Registry, Model Monitor, and Clarify outputs to the SR 11-7 validation documentation checklist — a practical guide for ML engineers satisfying model risk officers.","content":"<p>SR 11-7 is the Federal Reserve's guidance on model risk management. For UK banks with US operations, it applies alongside PRA SS1/23. The validation documentation requirements are well-known; what is less well-known is how to produce them automatically from a SageMaker MLOps pipeline without slowing down the CI/CD process.</p>\n<h2>The SR 11-7 Documentation Map</h2>\n<p>SR 11-7 requires: conceptual soundness assessment, ongoing monitoring plan, outcomes analysis, and independent validation. We mapped these to SageMaker artifacts: conceptual soundness → SageMaker Experiments (methodology documentation) + Clarify bias report; ongoing monitoring → Model Monitor baseline + scheduled monitoring jobs; outcomes analysis → Model Monitor data quality + prediction drift reports; independent validation → a separate SageMaker Pipeline that the model risk team runs independently on the same model artefact.</p>\n<h2>The Validation Pipeline</h2>\n<p>The independent validation pipeline is the key architectural decision. It runs the model risk team's own test suite — not the development team's — against the registered model version. Output is a structured validation report in a format defined jointly with the Chief Risk Officer's office. The pipeline is triggered automatically when a model is submitted for production promotion, and the production promotion gate will not open without a PASS status on the validation report.</p>","tags":["SR 11-7","SageMaker","MLOps","Model Risk","CI/CD"]}]},{"id":"data-world","slug":"data-world","name":"Data World","fullName":"Data Architecture World","tagline":"Data Mesh · Lakehouse · Real-Time Streaming · Regulatory Data Compliance","color":"#BA7517","colorLight":"#FAEEDA","colorDark":"#854F0B","icon":"📊","description":"Enterprise data platform designs — Data Mesh, Data Lakehouse, real-time streaming, and analytics engineering — drawn from live delivery across NHS, banking, retail, and insurance clients. Every pattern is grounded in real regulatory and operational constraints: BCBS 239, GDPR, DORA, NHS DSP, and Solvency II.","stats":[{"val":"Data Mesh","label":"9-Layer Architecture"},{"val":"Lakehouse","label":"Delta · Iceberg"},{"val":"BCBS 239","label":"Lineage Compliance"},{"val":"203% ROI","label":"NHS Analytics"},{"val":"CRISP-DM","label":"ML Delivery Method"}],"skills":["Data Mesh","Delta Lake","Apache Iceberg","Databricks","Oracle Analytics Cloud","Oracle Machine Learning","AWS Glue","AWS DMS","Amazon Kinesis","dbt","Collibra","Great Expectations","BCBS 239","GDPR Art. 30","CRISP-DM","XGBoost","COREP/FINREP","NHS DSP","Solvency II"],"scenarios":[{"sector":"Banking","title":"BCBS 239-Compliant Data Lineage Platform for Tier-2 Bank","challenge":"ECB SREP finding: inability to produce accurate risk aggregation reports within regulatory deadlines. 14 data domains, no automated lineage, FINREP restatements occurring quarterly due to data quality failures.","approach":"Deployed Collibra Data Intelligence Cloud as lineage hub; built automated harvesting from Oracle DB, AWS Glue, and Databricks using Collibra Integration; defined 14 data product domains with explicit data contracts (dbt contracts); Great Expectations for automated data quality gates at ingestion.","outcome":"End-to-end lineage from source to regulatory report in Collibra; FINREP restatements eliminated; ECB SREP finding formally closed in Supervisory Cycle 3.","tags":["BCBS 239","Collibra","dbt","FINREP","ECB","SREP"]},{"sector":"Public Sector","title":"Oracle Analytics Cloud for NHS Supply Chain: 203% ROI","challenge":"23 NHS trusts with no consolidated spend analytics; £800K/year in duplicate supplier payments; demand forecasting done manually in Excel with 40% forecast error rate.","approach":"Built OAC platform ingesting from 23 trust ERP systems via Oracle Data Integrator; Oracle Machine Learning XGBoost model for demand forecasting (selected over Random Forest after CRISP-DM model comparison); GDPR Article 30 processing register shaped feature store design.","outcome":"Forecast error reduced from 40% to 11%; £6.38M procurement savings Year 1; 203% 3-year ROI; deployed to 23 trusts with self-service analytics for procurement directors.","tags":["Oracle Analytics","OML","XGBoost","NHS","CRISP-DM","GDPR"]},{"sector":"Retail","title":"Real-Time Anomaly Detection for Retail Fraud on AWS","challenge":"£4.2M annual losses from returns fraud and coupon abuse; batch detection running 24-hour lag; unable to act on live transaction signals; no streaming infrastructure.","approach":"Built 3-pipeline AWS platform: Reference Data pipeline (DMS → S3 → Glue), Web App Live Analytics pipeline (Kinesis Data Streams → Lambda → SageMaker real-time endpoint), Enterprise Integration pipeline (Glue ETL → Redshift → QuickSight). SageMaker Isolation Forest model with <250ms inference SLA.","outcome":"Detection latency <250ms (from 24 hours); £3.1M fraud prevented in Year 1; SageMaker model F1 score 0.91 on held-out test set.","tags":["Kinesis","SageMaker","Anomaly Detection","Real-Time","Retail Fraud"]},{"sector":"Banking","title":"9-Layer Data Mesh for Wealth Management: COREP/FINREP Automation","challenge":"3,400 person-hours per quarter consumed by regulatory reporting; COREP/FINREP produced manually from 7 source systems; data quality SLA of 99.9% unachievable; ECB identified data quality as a material risk.","approach":"Designed 9-layer Data Mesh: Source Alignment, Ingestion, Raw, Cleansed, Conformed, Enriched, Product, Consumption, and Governance layers. Each of the 9 domains produces a data product with an explicit SLA. COREP/FINREP reports are consumption-layer data products built on dbt models with full lineage.","outcome":"COREP/FINREP reporting time reduced from 3,400 to 880 person-hours/quarter (74%); data quality SLA achieved at 99.97%; ECB material risk finding downgraded.","tags":["Data Mesh","COREP","FINREP","dbt","Wealth Management"]}],"posts":[{"date":"April 2025","category":"Data Mesh · Banking · BCBS 239","title":"Designing a 9-Layer Data Mesh for BCBS 239 Compliance: Topology, Contracts, and Lineage","excerpt":"How we structured data product domains to satisfy BCBS 239 Principles 2 and 3 simultaneously, using dbt contracts and Collibra lineage harvesting as the compliance evidence layer.","content":"<p>BCBS 239 Principle 2 requires a bank to maintain a data architecture that fully supports its risk data aggregation capabilities. Principle 3 requires end-to-end data lineage. A Data Mesh architecture can satisfy both — but only if the mesh topology is designed with BCBS 239 as an explicit constraint, not retrofitted as an afterthought.</p>\n<h2>The 9-Layer Topology Decision</h2>\n<p>Most Data Mesh implementations stop at 4-5 layers (raw, cleansed, product, consumption). For BCBS 239 compliance, we needed two additional layers: Conformed (a canonical data model layer where entity definitions are standardised across all domains) and Governance (a metadata and lineage layer that is itself a data product, queryable by the risk aggregation system). This gave us 9 layers with clear BCBS 239 principle mappings for each.</p>\n<h2>dbt Contracts as Regulatory Artefacts</h2>\n<p>dbt contracts define the schema and data quality commitments of each data product. For BCBS 239, we extended the standard dbt contract with three additional properties: regulatory_scope (which BCBS 239 principles this product satisfies), data_owner (the named accountable individual per Principle 1), and lineage_certified (a boolean set by the Governance layer after automated lineage validation). The contract YAML files are stored in Git and constitute the technical evidence of BCBS 239 compliance.</p>","tags":["Data Mesh","BCBS 239","dbt","Collibra","Lineage"]},{"date":"February 2025","category":"Oracle Analytics · NHS · ML","title":"How XGBoost Beat Random Forest for NHS Demand Forecasting — and What the CRISP-DM Trail Looked Like","excerpt":"A detailed model selection narrative: feature engineering from 23-trust procurement history, cross-validation under NHS data sharing agreements, and how the GDPR Article 30 processing register shaped the feature store.","content":"<p>Model selection decisions in a regulated public-sector context are not purely technical. The CRISP-DM methodology's Business Understanding phase, properly executed, surfaces three constraints that machine learning engineers rarely encounter in commercial settings: data sharing agreement scope, information governance approval timelines, and the requirement to justify every feature to a Caldicott Guardian.</p>\n<h2>Feature Engineering Under NHS Data Sharing Constraints</h2>\n<p>The 23 NHS trusts operated under individual Data Sharing Agreements with NHS Supply Chain. Not all trusts permitted the same features to be used in a shared model. We classified features into three tiers: Tier 1 (permitted by all 23 trusts), Tier 2 (permitted by 18+ trusts), and Tier 3 (trust-specific). The baseline model used only Tier 1 features; Tier 2 and 3 features were evaluated in federated experiments on trust-specific data.</p>\n<h2>XGBoost vs Random Forest: The Decision</h2>\n<p>Both models were trained on the same Tier 1 feature set with 5-fold cross-validation. XGBoost outperformed Random Forest on MAPE (11.2% vs 16.8%) and was significantly faster to retrain on the monthly Oracle ML compute budget. The decision factor that mattered to the Caldicott Guardian was interpretability: XGBoost SHAP values could be presented as a ranked list of procurement drivers in plain English, satisfying the NHS's algorithmic transparency requirements.</p>","tags":["XGBoost","Random Forest","CRISP-DM","NHS","GDPR","OML"]},{"date":"December 2024","category":"Kinesis · SageMaker · Retail","title":"Building a 3-Pipeline AWS Anomaly Detection Platform for Retail Fraud: Architecture and Lessons","excerpt":"The three-pipeline architecture that takes retail transaction data from source to fraud decision in under 250ms — and the operational lessons from running it at production scale.","content":"<p>Real-time fraud detection for a UK retailer processing 2.8M transactions per day requires an architecture that can handle burst traffic (Black Friday peaks at 8x baseline), maintain sub-250ms inference latency, and produce an auditable decision record for every flagged transaction — all simultaneously.</p>\n<h2>Pipeline 1: Reference Data</h2>\n<p>The Reference Data pipeline keeps the fraud model's contextual knowledge current. AWS DMS replicates customer and product master data from the on-premises Oracle ERP to S3 in near-real-time. AWS Glue ETL jobs transform and load this data into a feature store (SageMaker Feature Store) that the inference endpoint reads at prediction time. Refresh latency is under 5 minutes.</p>\n<h2>Pipeline 2: Live Transaction Analytics</h2>\n<p>Transactions flow from the POS system into Kinesis Data Streams (3 shards, scaling to 9 on-demand during peak). A Lambda consumer enriches each event with features from the SageMaker Feature Store and calls the SageMaker real-time endpoint. P99 inference latency on ExaCC-class hardware: 187ms. Flagged transactions are written to a DynamoDB decisions table with the full SHAP explanation vector.</p>\n<h2>Pipeline 3: Enterprise Integration</h2>\n<p>The enterprise integration pipeline aggregates daily fraud outcomes, model performance metrics, and case management updates from the fraud operations team into Redshift. QuickSight dashboards give the fraud director a daily view of model performance and a weekly trend analysis. This pipeline also feeds the SageMaker Model Monitor baseline for ongoing drift detection.</p>","tags":["Kinesis","SageMaker","Lambda","DynamoDB","Anomaly Detection"]}]},{"id":"presales-world","slug":"presales-world","name":"Presales & Leadership","fullName":"Presales, Solution Leadership & Client Engagement","tagline":"C-Suite Engagement · Bid Architecture · SAFe Leadership · Mentoring","color":"#993556","colorLight":"#FBEAF0","colorDark":"#72243E","icon":"🎯","description":"Client-facing solution design, C-level stakeholder engagement, bid architecture, and technical leadership at DXC Technology. From shaping multi-million pound proposals in banking and public sector to mentoring the next generation of solution architects — these posts capture the craft behind the commercial.","stats":[{"val":"C-Suite","label":"Stakeholder Engagement"},{"val":"£Multi-M","label":"Bids Shaped"},{"val":"SAFe","label":"PI Planning Lead"},{"val":"MSc","label":"Data Analytics"},{"val":"L7","label":"Digital Apprenticeship"}],"skills":["Solution Architecture Presales","Technology Business Management (TBM)","SAFe Agile PI Planning","C-Suite Stakeholder Engagement","G-Cloud Framework","OJEU/PCR 2015","Bid Architecture","Commercial Modelling","DORA Metrics","RACI Design","SLA Framework Design","Oracle HCM/ERP","SFIA 8 Competency Framework","Mentoring & Coaching"],"scenarios":[{"sector":"Banking","title":"£28M Cloud Migration Bid — Tier-1 UK Bank","challenge":"4-week bid window; client CTO requiring quantified business case; competing against two Big-4 firms; no pre-existing relationship with client EA team; complex regulatory overlay (PRA, FCA, DORA).","approach":"Built TBM-based business case translating cloud migration into unit economics language: per-transaction cost reduction, application unit cost, risk-adjusted NPV. Three-tier commercial model (Transform, Operate, Innovate) aligned to client's 3-year strategic plan. Architecture narrative structured around PRA supervisory priorities.","outcome":"Bid won; TBM business case cited as primary differentiator in client debrief; CTO quoted the unit economics model verbatim in the internal approval paper; contract signed Q2 2024.","tags":["TBM","Bid","Banking","PRA","Commercial Modelling"]},{"sector":"Public Sector","title":"NHS Oracle HCM/ERP — G-Cloud SQ Score 92/100","challenge":"NHS trust requiring Oracle HCM and ERP on G-Cloud 13 framework; 2-week Selection Questionnaire window; complex TUPE obligations for 4,200 staff; ESR (Electronic Staff Record) integration requirements.","approach":"SQ response structured around NHS Long Term Workforce Plan alignment; TUPE data migration strategy demonstrated with parallel run approach; ESR integration architecture using Oracle Integration Cloud with NHS Digital API standards compliance.","outcome":"SQ scored 92/100 — highest in the evaluation; shortlisted to ITT; TUPE strategy and ESR integration approach specifically cited as evaluation strengths.","tags":["G-Cloud","NHS","Oracle HCM","TUPE","ESR"]},{"sector":"Retail","title":"DXC Retail AI Proposition: £4.5M Pipeline in 90 Days","challenge":"DXC had no structured AI proposition for UK retail sector; three target retail accounts engaged at Discovery stage but no differentiated offering; needed an AI-native commercial narrative for CFO-level conversations.","approach":"Designed three-tier commercial offering: Assess (AI Maturity Assessment, fixed price), Accelerate (RAG/Agentic pilot, time-and-materials), Scale (production AI platform, outcome-based pricing). Each tier with a clear ROI model and reference case from adjacent sector. Retail-specific use cases: demand forecasting, personalisation, returns fraud, markdown optimisation.","outcome":"£4.5M pipeline created across three accounts within 90 days of proposition launch; two accounts progressed to active deal stage; one Assess engagement signed within 60 days.","tags":["Presales","Retail AI","Commercial Proposition","Pipeline"]},{"sector":"Banking","title":"SAFe PI Planning Leadership — 12-Team Financial Services ART","challenge":"12-team SAFe ART across UK, India, and US time zones; previous PI had 38% feature carry-over; dependency management breaking down between data, cloud, and application delivery trains; team NPS at 41.","approach":"Redesigned dependency board using capability-to-team mapping to surface hidden architectural dependencies before PI planning day. Introduced Architecture Sync (bi-weekly) as a cross-team forum. Ran two pre-PI planning sessions with architects to pre-resolve highest-risk dependencies. PI planning duration extended by 4 hours for structured dependency resolution.","outcome":"Feature carry-over reduced from 38% to 9%; team NPS improved from 41 to 74; Architecture Sync adopted as permanent ART ceremony; DORA metrics (deployment frequency, change failure rate) both improved in the PI.","tags":["SAFe","PI Planning","DORA Metrics","Agile","Financial Services"]}],"posts":[{"date":"May 2025","category":"Presales · Banking · TBM","title":"Winning a £28M Bank Bid in 4 Weeks: The Business Case Architecture That Made the Difference","excerpt":"How Technology Business Management translated 'cloud migration' into a board-level financial narrative — moving the conversation from speeds-and-feeds to unit economics, tax efficiency, and risk-adjusted NPV.","content":"<p>Most enterprise architecture bids are lost in the business case, not the technical solution. A technically superior architecture attached to a vague \"estimated savings of £X\" narrative will lose to a weaker architecture with a well-structured financial model every time. The £28M GlobalBank bid taught me the commercial architecture skills that no certification covers.</p>\n<h2>Technology Business Management: The Framework</h2>\n<p>TBM provides a taxonomy for mapping IT costs to business outcomes. For a cloud migration, the most persuasive TBM narrative is not total cost reduction — it is unit cost reduction. Banks care about cost per transaction, cost per customer, and cost per regulatory report. We modelled the current-state unit costs from the client's own data (shared under NDA) and projected the future-state unit costs post-migration. The delta was the business case.</p>\n<h2>The Three-Tier Commercial Model</h2>\n<p>We structured the engagement as three commercially distinct tiers: Transform (fixed price, defined scope, risk held by DXC), Operate (managed service with SLA-based pricing, shared risk), and Innovate (outcome-based pricing tied to agreed business KPIs). This structure allowed the CTO to present the investment as a transition from capex to opex — a narrative that resonated with the CFO's FY2025 balance sheet objectives.</p>\n<h2>The Regulatory Overlay</h2>\n<p>PRA and FCA supervisory priorities were explicitly addressed in the commercial narrative. We quantified the cost of non-compliance with DORA ICT resilience requirements in the current state: one significant operational incident in the past 18 months had cost the bank £4.2M in incident management and regulatory response. The migration's resilience improvement was valued at the risk-adjusted reduction in expected incident cost — a number the CTO used verbatim in the internal approval paper.</p>","tags":["TBM","Presales","Commercial Architecture","PRA","DORA"]},{"date":"March 2025","category":"Leadership · SAFe · Architecture","title":"Reducing SAFe PI Carry-Over from 38% to 9%: A Dependency Architecture Retrospective","excerpt":"The root cause of cross-team dependency failures in large financial services ARTs is almost always an architecture problem, not a process problem.","content":"<p>After the second consecutive PI with 38% feature carry-over, the ART's RTE requested a root cause analysis. The standard answer — \"teams underestimated complexity\" — is never the root cause. It is a symptom. The actual root cause, in every PI carry-over analysis I have done, is dependency architecture: the wrong teams are owning the wrong capabilities, and the dependencies between them are discovered during execution rather than during planning.</p>\n<h2>Capability-to-Team Mapping</h2>\n<p>The intervention started with a two-day capability-to-team mapping exercise, run two weeks before PI Planning. We mapped every planned feature to the business capabilities it required, and every capability to the team responsible for it. The output was a dependency graph that made visible the 23 cross-team dependencies that would otherwise have been discovered on Sprint 3 of the PI. Seventeen of them were resolvable before PI Planning day — by reassigning work, adjusting team boundaries, or changing delivery sequencing.</p>\n<h2>The Architecture Sync Ceremony</h2>\n<p>The permanent fix was an Architecture Sync ceremony, bi-weekly, 45 minutes. Attended by all team architects and the Solution Architect. Agenda: review of in-flight dependency assumptions, early warning of emerging technical risks, and architecture decision records for cross-team decisions. This ceremony reduced the average dependency discovery lag from 3.2 sprints to 0.4 sprints over the following three PIs.</p>","tags":["SAFe","PI Planning","Dependencies","Architecture","ART"]},{"date":"January 2025","category":"Mentoring · Career Development","title":"From Graduate to Solution Architect in 3 Years: A Structured Mentoring Framework","excerpt":"The mentoring approach I use with junior architects at DXC — combining weekly architecture reviews, deliberate client exposure, and a competency model mapped to SFIA 8.","content":"<p>The most common failure mode in architect development is insufficient deliberate practice. Junior architects who spend their first three years in delivery roles — executing against designs they did not create — often reach their fifth year still unable to lead an architecture engagement independently. The antidote is a structured programme that creates design responsibility early, with expert feedback loops.</p>\n<h2>The 12-Month Development Plan</h2>\n<p>The programme runs in three phases. Months 1-4: Shadow and Contribute — the mentee attends all architecture workshops, produces first drafts of architecture artefacts (ArchiMate views, ADRs, solution design documents), and receives weekly 1:1 review. Months 5-8: Lead with Support — the mentee leads one defined architecture stream with the mentor as reviewer, not contributor. Months 9-12: Independent Delivery — the mentee leads a full architecture engagement end-to-end, with fortnightly debrief sessions.</p>\n<h2>The SFIA 8 Competency Model</h2>\n<p>We use SFIA 8 as the competency framework because it is specific enough to be actionable. The target profile for a Solution Architect at Level 5 (ARCH) specifies 14 skill descriptors. We assess against each at the start of the programme and set a target level for each at 6 months and 12 months. The weekly architecture review sessions are explicitly targeted at the skills showing the largest gap-to-target.</p>\n<h2>Client Exposure</h2>\n<p>The most accelerating factor is client exposure — not observation, but active participation. We create structured opportunities for mentees to lead one client workshop per month by month 6. The preparation debrief (30 minutes before) and reflection debrief (30 minutes after) are where the most important development conversations happen.</p>","tags":["Mentoring","SFIA 8","Career Development","Architecture","DXC"]}]}];
+
+let currentWorld = null;
+
+function setAccent(color, light, dark) {
+  const r = document.documentElement.style;
+  r.setProperty('--accent', color);
+  r.setProperty('--accent-l', light || color + '22');
+  r.setProperty('--accent-d', dark || color);
+  document.getElementById('brand-dot').style.background = color;
+}
+
+function hideAll() {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.getElementById('post-reader').classList.remove('active');
+  document.querySelectorAll('.nav-pill').forEach(p => p.classList.remove('active'));
+}
+
+function showPage(id) {
+  hideAll();
+  document.getElementById('page-' + id).classList.add('active');
+  document.getElementById('pill-' + id).classList.add('active');
+  setAccent('#185FA5', '#E6F1FB', '#0C447C');
+  window.scrollTo({top:0, behavior:'smooth'});
+  currentWorld = null;
+}
+
+function showWorld(slug) {
+  hideAll();
+  const w = WORLDS.find(x => x.slug === slug);
+  document.getElementById('page-' + slug).classList.add('active');
+  document.getElementById('pill-' + slug).classList.add('active');
+  setAccent(w.color, w.colorLight, w.colorDark);
+  window.scrollTo({top:0, behavior:'smooth'});
+  currentWorld = slug;
+}
+
+function showPost(worldSlug, idx) {
+  const w = WORLDS.find(x => x.slug === worldSlug);
+  const p = w.posts[idx];
+  hideAll();
+  setAccent(w.color, w.colorLight, w.colorDark);
+
+  document.getElementById('pr-eyebrow').textContent = w.icon + ' ' + w.fullName;
+  document.getElementById('pr-eyebrow').style.color = w.color;
+
+  document.getElementById('pr-meta').innerHTML =
+    '<span class="pm-date">' + p.date + '</span>' +
+    '<span class="pm-cat" style="background:' + w.colorLight + ';color:' + w.colorDark + '">' + p.category + '</span>';
+
+  document.getElementById('pr-title').textContent = p.title;
+  document.getElementById('pr-excerpt').textContent = p.excerpt;
+  document.getElementById('pr-tags').innerHTML = p.tags.map(t => '<span class="ptag">' + t + '</span>').join('');
+  document.getElementById('pr-body').innerHTML = p.content;
+
+  document.getElementById('post-back-btn').onclick = () => showWorld(worldSlug);
+  document.getElementById('pr-back2').textContent = '← Back to ' + w.name;
+  document.getElementById('pr-back2').onclick = () => showWorld(worldSlug);
+  document.getElementById('pr-gh-link').href = 'https://github.com/senthilkumar-sivakumar/' + worldSlug;
+
+  document.getElementById('post-reader').classList.add('active');
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+
+// stagger card animations
+function staggerCards() {
+  document.querySelectorAll('.world-card, .post-card, .sc').forEach((el, i) => {
+    el.style.animationDelay = (i * 0.04) + 's';
+  });
+}
+staggerCards();
+</script>
+</body>
+</html>
